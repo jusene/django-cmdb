@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'cmdb',
     'asset.apps.AssetConfig',
     'app.apps.AppConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -73,7 +74,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'cmdb.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

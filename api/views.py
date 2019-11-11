@@ -1,33 +1,71 @@
-from rest_framework import serializers
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.parsers import JSONParser
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.permissions import BasePermission
+from rest_framework.views import APIView
+from django.http import Http404
+from api.serializers import AppSerializer, HostSerializer, EnvSerializer, ProjectSerializer
 from app.models import App
-from asset.models import Env, Host
+from asset.models import Env, Host, Project
 
 
 # Create your views here.
-class AppSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = App
-        fields = "__all__"
+class AuthPermission(BasePermission):
+    def has_permission(self, request, view):
+        return True
 
 
-@csrf_exempt
-def app_list(request):
-    if request.method == "GET":
-        if request.GET.get('app') and request.GET.get('env'):
-            env_id = Env.objects.get(tag=request.GET.get('env'))
-            serializer = AppSerializer(App.objects.get(tag=request.GET.get('app'), env=env_id))
-            row = dict(serializer.data)
-            if row.get("is_k8s") == 0 and Host.objects.get(id=row.get('hosts')[0]).idc_id == 1:
-                row["hosts"] = list(map(lambda x: Host.objects.get(id=x).wan, row.get('hosts')))
-            else:
-                row["hosts"] = list(map(lambda x: Host.objects.get(id=x).lan, row.get('hosts')))
-            return JsonResponse(row)
+class AppList(APIView):
+    permission_classes = [AuthPermission, ]
+    '''
+    List all apps
+    '''
+    def get(self, request, format=None):
+        apps = App.objects.all()
+        serializer = AppSerializer(apps, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class AppDetail(APIView):
+    '''
+    AppList a app detail
+    '''
+    def get_object(self, pk, env):
+        try:
+            return App.objects.get(tag=pk, env=env)
+        except Exception as e:
+            raise Http404
+
+    def get(self, request, pk, format=None):
+        env = request.GET.get('env')
+        if env is None:
+            app = App.objects.filter(tag=pk)
+            serializer = AppSerializer(app, many=True)
+            return Response(serializer.data)
         else:
-            apps = App.objects.all()
-            serializer = AppSerializer(apps, many=True)
-            return JsonResponse(serializer.data, safe=False)
-    else:
-        return JsonResponse({"Message": "Method is not allowed!"})
+            env_id = Env.objects.get(tag=env).id
+            app = self.get_object(pk=pk, env=env_id)
+            serializer = AppSerializer(app)
+            return Response(serializer.data)
+
+
+class HostList(APIView):
+    def get(self, request, format=None):
+        hosts = Host.objects.all()
+        serializer = HostSerializer(hosts, many=True)
+        return Response(serializer.data)
+
+
+class EnvList(APIView):
+    def get(self, request, format=None):
+        envs = Env.objects.all()
+        serializer = EnvSerializer(envs, many=True)
+        return Response(serializer.data)
+
+
+class ProjectList(APIView):
+    def get(self, request, format=None):
+        projects = Project.objects.all()
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data)
+
+
