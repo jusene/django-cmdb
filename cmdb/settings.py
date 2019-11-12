@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'task.apps.TaskConfig',
     'django_celery_results',
     'django_celery_beat',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'cmdb.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

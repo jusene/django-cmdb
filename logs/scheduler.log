@@ -136,3 +136,9 @@
   warnings.warn('Using settings.DEBUG leads to a memory leak, never '
 [2019-11-12 16:14:48,613: INFO/MainProcess] schdue@prometheus ready.
 [2019-11-12 16:15:21,062: INFO/MainProcess] Received task: celery.backend_cleanup[fa85ec7d-e579-48da-92f7-af0e7bd98214]  
+[2019-11-12 16:24:09,184: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-12 16:24:09,202: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-12 16:24:10,230: INFO/MainProcess] mingle: all alone
+[2019-11-12 16:24:10,247: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-12 16:24:10,247: INFO/MainProcess] schdue@prometheus ready.
