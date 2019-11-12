@@ -137,3 +137,4 @@ CELERY_BROKER_URL = 'amqp://rabbitadmin:rabbitadmin@192.168.55.91:5672//djcelery
 CELERY_RESULT_BACKEND = "django-db"
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+CELERYD_MAX_TASKS_PER_CHILD = 3

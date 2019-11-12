@@ -22,3 +22,233 @@
 [2019-11-12 15:54:47,759: WARNING/ForkPoolWorker-1] Request: <Context: {'lang': 'py', 'task': 'scheduler.celery.debug_task', 'id': '0d5a15ff-893f-40ce-b689-3a8b7e2f9259', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0d5a15ff-893f-40ce-b689-3a8b7e2f9259', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen22012@prometheus', 'reply_to': '75bbda84-2f2e-3fd8-b88b-fe27b3cab055', 'correlation_id': '0d5a15ff-893f-40ce-b689-3a8b7e2f9259', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': False}, 'args': [], 'kwargs': {}, 'hostname': 'schdue@prometheus', 'is_eager': False, 'callbacks': None, 'errbacks': None, 'chain': None, 'chord': None, 'called_directly': False, '_protected': 1}>
 [2019-11-12 15:54:47,818: INFO/ForkPoolWorker-1] Task scheduler.celery.debug_task[0d5a15ff-893f-40ce-b689-3a8b7e2f9259] succeeded in 0.060549805872142315s: None
 [2019-11-12 16:15:21,138: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[fa85ec7d-e579-48da-92f7-af0e7bd98214] succeeded in 0.07375145284458995s: None
+[2019-11-12 16:43:46,080: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[532547a7-89eb-4a1b-8c10-62a97b85bbb2] succeeded in 0.08247102797031403s: None
+[2019-11-12 17:23:26,744: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[6c359822-febd-4a39-9700-474aab12c51a] raised unexpected: A malformed block was encountered while loading tasks: [{'action':{'module':'shell','args':'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 146, in _load_tasks
+    return load_list_of_blocks(ds=ds, play=self, variable_manager=self._variable_manager, loader=self._loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 44, in load_list_of_blocks
+    raise AnsibleAssertionError('%s should be a list or None but is %s' % (ds, type(ds)))
+ansible.errors.AnsibleAssertionError: [{'action':{'module':'shell','args':'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 60, in task_run
+    play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 115, in load
+    return p.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 240, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 148, in _load_tasks
+    raise AnsibleParserError("A malformed block was encountered while loading tasks: %s" % to_native(e), obj=self._ds, orig_exc=e)
+ansible.errors.AnsibleParserError: A malformed block was encountered while loading tasks: [{'action':{'module':'shell','args':'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+[2019-11-12 17:28:12,611: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[14094d03-8a96-422d-bf74-726f4dcf63ef] raised unexpected: TypeError("__init__() got an unexpected keyword argument 'options'",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 70, in task_run
+    stdout_callback=self.results_callback,
+TypeError: __init__() got an unexpected keyword argument 'options'
+[2019-11-12 17:35:50,428: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[8e95b3f6-1e05-46af-9bef-eb2053540a08] succeeded in 0.7782944622449577s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 17:42:49,223: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[7c7bffbb-c20b-4c41-9f6c-18ae7ad27b14] raised unexpected: A malformed block was encountered while loading a block
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/block.py", line 129, in _load_block
+    use_handlers=self._use_handlers,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 123, in load_list_of_tasks
+    args_parser = ModuleArgsParser(task_ds)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/parsing/mod_args.py", line 114, in __init__
+    raise AnsibleAssertionError("the type of 'task_ds' should be a dict, but is a %s" % type(task_ds))
+ansible.errors.AnsibleAssertionError: the type of 'task_ds' should be a dict, but is a <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 60, in task_run
+    play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 112, in load
+    return p.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 230, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 143, in _load_tasks
+    return load_list_of_blocks(ds=ds, play=self, variable_manager=self._variable_manager, loader=self._loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 80, in load_list_of_blocks
+    loader=loader,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/block.py", line 93, in load
+    return b.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 230, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/block.py", line 132, in _load_block
+    raise AnsibleParserError("A malformed block was encountered while loading a block", obj=self._ds, orig_exc=e)
+ansible.errors.AnsibleParserError: A malformed block was encountered while loading a block
+[2019-11-12 17:44:53,319: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[f7bc615c-a6da-4335-afb6-080aa87fa88f] raised unexpected: JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 3 (char 2)',)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 8, in ansible_hoc
+    adhoc = AnsibleRun(host_list, task_list)
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 49, in __init__
+    self.task_list = json.loads(task_list)
+  File "/usr/lib64/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
+[2019-11-12 17:47:03,821: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[89524dab-2c7b-4d4c-b3f6-0f6438bb885d] raised unexpected: A malformed block was encountered while loading tasks
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 143, in _load_tasks
+    return load_list_of_blocks(ds=ds, play=self, variable_manager=self._variable_manager, loader=self._loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 47, in load_list_of_blocks
+    raise AnsibleAssertionError('%s should be a list or None but is %s' % (ds, type(ds)))
+ansible.errors.AnsibleAssertionError: [{'action': {'module': 'shell','args': 'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 61, in task_run
+    play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 112, in load
+    return p.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 230, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 145, in _load_tasks
+    raise AnsibleParserError("A malformed block was encountered while loading tasks", obj=self._ds, orig_exc=e)
+ansible.errors.AnsibleParserError: A malformed block was encountered while loading tasks
+[2019-11-12 17:55:36,791: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[886e8727-c831-4992-b3ad-3a62af4311e2] raised unexpected: A malformed block was encountered while loading tasks
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 143, in _load_tasks
+    return load_list_of_blocks(ds=ds, play=self, variable_manager=self._variable_manager, loader=self._loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 47, in load_list_of_blocks
+    raise AnsibleAssertionError('%s should be a list or None but is %s' % (ds, type(ds)))
+ansible.errors.AnsibleAssertionError: [{'action': {'module': 'shell','args': 'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 61, in task_run
+    play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 112, in load
+    return p.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 230, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 145, in _load_tasks
+    raise AnsibleParserError("A malformed block was encountered while loading tasks", obj=self._ds, orig_exc=e)
+ansible.errors.AnsibleParserError: A malformed block was encountered while loading tasks
+[2019-11-12 18:04:37,940: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[c59cc5c3-0e0b-4f7a-9cd6-c02153c07120] raised unexpected: A malformed block was encountered while loading tasks
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 143, in _load_tasks
+    return load_list_of_blocks(ds=ds, play=self, variable_manager=self._variable_manager, loader=self._loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/helpers.py", line 47, in load_list_of_blocks
+    raise AnsibleAssertionError('%s should be a list or None but is %s' % (ds, type(ds)))
+ansible.errors.AnsibleAssertionError: [{'action': {'module': 'shell','args': 'mkdir -p /tmp/test123'}}] should be a list or None but is <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 61, in task_run
+    play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 112, in load
+    return p.load_data(data, variable_manager=variable_manager, loader=loader)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/base.py", line 230, in load_data
+    self._attributes[target_name] = method(name, ds[name])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/playbook/play.py", line 145, in _load_tasks
+    raise AnsibleParserError("A malformed block was encountered while loading tasks", obj=self._ds, orig_exc=e)
+ansible.errors.AnsibleParserError: A malformed block was encountered while loading tasks
+[2019-11-12 18:29:16,310: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[78fe672a-7080-4240-b5da-b43b9261a6e2] raised unexpected: NameError("name 'module' is not defined",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 58, in task_run
+    dict(action=dict(module='{module}'.format(module=module), args="{args}".format(args=args))),
+NameError: name 'module' is not defined
+[2019-11-12 18:31:19,607: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[8298fd61-7827-4685-9723-515aa9288093] succeeded in 0.7781723961234093s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 18:37:14,733: WARNING/ForkPoolWorker-1] <bound method AnsibleRun.get_result of <utils.AnsibleUtil.AnsibleRun object at 0x7f4b4f33e710>>
+[2019-11-12 18:37:14,848: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[af654ab5-d882-4519-9ba0-63c1a5ee35d5] succeeded in 0.7748140310868621s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 18:46:42,899: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[6420056c-7ffb-4a42-bc2d-ad6ce881cd45] succeeded in 0.725506919901818s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 18:48:17,076: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[18d4844c-2f6b-4938-ab2f-26fefd22d072] succeeded in 0.750036281067878s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 19:03:56,689: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[32dccee3-633b-44ef-bce8-2f0db752365d] raised unexpected: AttributeError("'MyTaskQueueManager' object has no attribute '_workers'",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 85, in task_run
+    tqm.run(play)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/executor/task_queue_manager.py", line 267, in run
+    self._initialize_processes(min(self._options.forks, iterator.batch_size))
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 42, in _initialize_processes
+    self._workers.append([None, rslt_q])
+AttributeError: 'MyTaskQueueManager' object has no attribute '_workers'
+[2019-11-12 19:05:29,965: ERROR/ForkPoolWorker-1] Task task.tasks.ansible_hoc[5014c935-8a2a-436a-bf9d-d9890bf62ffb] raised unexpected: AttributeError("'list' object has no attribute 'is_alive'",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 85, in task_run
+    tqm.run(play)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/executor/task_queue_manager.py", line 291, in run
+    play_return = strategy.run(iterator, play_context)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/plugins/strategy/linear.py", line 310, in run
+    self._queue_task(host, task, task_vars, play_context)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/plugins/strategy/__init__.py", line 312, in _queue_task
+    if worker_prc is None or not worker_prc.is_alive():
+AttributeError: 'list' object has no attribute 'is_alive'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 88, in task_run
+    tqm.cleanup()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/executor/task_queue_manager.py", line 305, in cleanup
+    self._cleanup_processes()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/ansible/executor/task_queue_manager.py", line 310, in _cleanup_processes
+    if worker_prc and worker_prc.is_alive():
+AttributeError: 'list' object has no attribute 'is_alive'
+[2019-11-12 19:15:28,772: INFO/ForkPoolWorker-1] Task task.tasks.ansible_hoc[66d3b304-fa0c-4444-b043-a56ebe44b5a7] succeeded in 2.120634767692536s: {'ok': {'192.168.66.92': {'changed': True, 'end': '2019-11-12 19:15:28.608115', 'stdout': '', 'cmd': 'mkdir /tmp/test123', 'rc': 0, 'start': '2019-11-12 19:15:28.580491', 'stderr': '', 'delta': '0:00:00.027624', 'invocation': {...}, 'warnings': [...], '_ansible_parsed': True, 'stdout_lines': [...], 'stderr_lines': [...], '_ansible_no_log': False}, 'runner': 'ok'}, 'failed': {}, 'unreachable': {}}

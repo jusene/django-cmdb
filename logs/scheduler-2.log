@@ -16,3 +16,26 @@
 [2019-11-12 15:28:52,111: INFO/ForkPoolWorker-2] Task scheduler.celery.debug_task[aacdb64e-5214-4308-9ad2-9a796bc6a705] succeeded in 0.10620284918695688s: None
 [2019-11-12 15:56:33,223: WARNING/ForkPoolWorker-2] Request: <Context: {'lang': 'py', 'task': 'scheduler.celery.debug_task', 'id': 'e161c2d7-c77a-4d6f-b403-86e8682bf3f5', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'e161c2d7-c77a-4d6f-b403-86e8682bf3f5', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen22012@prometheus', 'reply_to': '75bbda84-2f2e-3fd8-b88b-fe27b3cab055', 'correlation_id': 'e161c2d7-c77a-4d6f-b403-86e8682bf3f5', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': False}, 'args': [], 'kwargs': {}, 'hostname': 'schdue@prometheus', 'is_eager': False, 'callbacks': None, 'errbacks': None, 'chain': None, 'chord': None, 'called_directly': False, '_protected': 1}>
 [2019-11-12 15:56:33,256: INFO/ForkPoolWorker-2] Task scheduler.celery.debug_task[e161c2d7-c77a-4d6f-b403-86e8682bf3f5] succeeded in 0.033430214039981365s: None
+[2019-11-12 17:24:56,055: ERROR/ForkPoolWorker-2] Task task.tasks.ansible_hoc[c2d1333d-c5d2-4642-b902-97e8af967c97] raised unexpected: TypeError("__init__() got an unexpected keyword argument 'options'",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 70, in task_run
+    stdout_callback=self.results_callback,
+TypeError: __init__() got an unexpected keyword argument 'options'
+[2019-11-12 17:34:32,248: ERROR/ForkPoolWorker-2] Task task.tasks.ansible_hoc[cccdba9a-8641-4c2f-9590-5763689b0b20] raised unexpected: TypeError("__init__() got an unexpected keyword argument 'options'",)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 9, in ansible_hoc
+    adhoc.task_run()
+  File "/ddhome/cmdb/utils/AnsibleUtil.py", line 70, in task_run
+    stdout_callback=self.results_callback,
+TypeError: __init__() got an unexpected keyword argument 'options'
+[2019-11-12 18:03:06,128: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[7b6ffb7c-72bf-4f2c-9ff8-f6d0d8afc370] succeeded in 0.7174955545924604s: {'ok': {}, 'failed': {}, 'unreachable': {}}
