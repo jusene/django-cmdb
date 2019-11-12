@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'cmdb',
     'asset.apps.AssetConfig',
     'app.apps.AppConfig',
+    'scheduler.apps.SchedulerConfig',
+    'task.apps.TaskConfig',
+    'django_celery_results',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +131,9 @@ SIMPLEUI_ANALYSIS = False
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+CELERY_TIMEZONE = 'Asia/Shanghai'
+CELERY_BROKER_URL = 'amqp://rabbitadmin:rabbitadmin@192.168.55.91:5672//djcelery'
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
