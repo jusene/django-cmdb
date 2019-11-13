@@ -39,3 +39,18 @@ Traceback (most recent call last):
     stdout_callback=self.results_callback,
 TypeError: __init__() got an unexpected keyword argument 'options'
 [2019-11-12 18:03:06,128: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[7b6ffb7c-72bf-4f2c-9ff8-f6d0d8afc370] succeeded in 0.7174955545924604s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 19:19:53,286: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[73dae5e3-e395-4ec4-9e22-a2c5819bc588] succeeded in 1.8426977107301354s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 19:22:16,607: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[226f36cd-4ba8-4782-b8a8-d89c9553a50c] succeeded in 1.4029050492681563s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 21:13:53,159: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[aba41d89-cdbe-45fa-9f6d-0eb1097c31d3] succeeded in 1.1955719059333205s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-12 21:20:50,914: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[c17b1194-0ce9-4668-9488-018f82d2b40e] succeeded in 1.3783505209721625s: {'ok': {}, 'failed': {}, 'unreachable': {}}
+[2019-11-13 04:00:00,091: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[98f15dba-c911-411f-9a85-2bb308b9d3f2] succeeded in 0.032422691117972136s: None
+[2019-11-13 10:00:51,451: WARNING/ForkPoolWorker-2] 192.168.66.92,
+[2019-11-13 10:00:51,453: WARNING/ForkPoolWorker-2] <class 'str'>
+[2019-11-13 10:00:51,453: WARNING/ForkPoolWorker-2] [{'action': {'module': 'shell', 'args': 'mkdir -p /tmp/test123'}}, {'action': {'module': 'shell', 'args': 'rm -rf /tmp/test123'}}]
+[2019-11-13 10:00:51,453: WARNING/ForkPoolWorker-2] <class 'list'>
+[2019-11-13 10:00:53,805: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[b3cdcb0e-7f94-4911-a912-53b1a91eac07] succeeded in 2.3539925683289766s: {'ok': {'192.168.66.92': {'changed': True, 'end': '2019-11-13 10:00:53.654635', 'stdout': '', 'cmd': 'rm -rf /tmp/test123', 'rc': 0, 'start': '2019-11-13 10:00:53.626482', 'stderr': '', 'delta': '0:00:00.028153', 'invocation': {...}, 'warnings': [...], '_ansible_parsed': True, 'stdout_lines': [...], 'stderr_lines': [...], '_ansible_no_log': False}, 'runner': 'ok'}, 'failed': {}, 'unreachable': {}}
+[2019-11-13 14:25:38,342: WARNING/ForkPoolWorker-2] 192.168.66.92,
+[2019-11-13 14:25:38,342: WARNING/ForkPoolWorker-2] <class 'str'>
+[2019-11-13 14:25:38,343: WARNING/ForkPoolWorker-2] [{'action': {'module': 'shell', 'args': 'mkdir -p /tmp/test123'}}, {'action': {'module': 'shell', 'args': 'rm -rf /tmp/test123'}}]
+[2019-11-13 14:25:38,343: WARNING/ForkPoolWorker-2] <class 'list'>
+[2019-11-13 14:25:40,603: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[0a21f2b6-f4d4-4489-966b-f4f4847da7f2] succeeded in 2.261786581017077s: {'ok': [[], []], 'failed': [], 'unreachable': []}

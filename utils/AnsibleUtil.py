@@ -14,29 +14,39 @@ import ansible.constants as C
 class ResultCallback(CallbackBase):
     def __init__(self, *args, **kwargs):
         super(ResultCallback, self).__init__(*args, **kwargs)
-        self.host_ok = {}
-        self.host_failed = {}
-        self.host_unreachable = {}
+        self.host_ok = []
+        self.host_failed = []
+        self.host_unreachable = []
 
     def v2_runner_on_ok(self, result, **kwargs):
-        host = result._host
-        self.host_ok[host.name] = result._result
-        self.host_ok['runner'] = 'ok'
+        tmp = [
+                {"host": result._host.name},
+                {"task_{}".format(len(self.host_ok)+1): result._result}
+              ]
+        self.host_ok.append(tmp)
+       
+        
 
-    def v2_runner_item_on_failed(self, result):
-        host = result._host
-        self.host_failed[host.name] = result._result
-        self.host_failed['runner'] = 'failed'
+    def v2_runner_on_failed(self, result, ignore_errors=False):
+        tmp = [
+                {"host": result._host.name},
+                {"task_{}".format(len(self.host_failed)+1): result._result}
+              ]
+        self.host_failed.append(tmp)
+     
+       
 
     def v2_runner_on_unreachable(self, result):
-        host = result._host
-        self.host_unreachable[host.name] = result._result
-        self.host_unreachable['runner'] = 'unreachable'
+        tmp = [
+                {"host": result._host.name},
+                {"task_{}".format(len(self.host_unreachable)+1): result._result}
+              ]
+        self.host_unreachable.append(tmp)
 
 
 
 class AnsibleRun:
-    def __init__(self, host_list, module, args):
+    def __init__(self, host_list, task_list):
         Options = namedtuple('Options',
                          ['connection', 'module_path', 'forks', 'become', 'become_method', 'become_user', 'check',
                           'diff', 'remote_user'])
@@ -47,8 +57,7 @@ class AnsibleRun:
         self.passwords = dict()
         self.results_callback = ResultCallback()
         self.host_list = host_list
-        self.module = module
-        self.args = args
+        self.task_list = task_list
         self.inventory = InventoryManager(loader=self.loader, sources=self.host_list)
         self.variable_manager = VariableManager(loader=self.loader, inventory=self.inventory)
 
@@ -57,9 +66,7 @@ class AnsibleRun:
             name="Ansible Play",
             hosts=self.host_list,
             gather_facts='no',
-            tasks=[
-                  dict(action=dict(module='{module}'.format(module=self.module), args="{args}".format(args=self.args))),
-            ]
+            tasks=self.task_list
         )
 
         play = Play().load(play_source, variable_manager=self.variable_manager, loader=self.loader)
@@ -88,8 +95,4 @@ class AnsibleRun:
         result['unreachable'] = self.results_callback.host_unreachable
         return result
 
-if __name__ == "__main__":
-    host_list, module, args  = "192.168.66.92,", "shell", "rm -rf /tmp/test123"
-    adhoc = AnsibleRun(host_list, module, args)
-    adhoc.task_run()
-    print(adhoc.get_result())
+
