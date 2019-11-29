@@ -32,7 +32,7 @@ class AppAdmin(admin.ModelAdmin):
 class DBAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'ip', 'port', 'comment')
     list_per_page = 50
-    
+
 
 @admin.register(Middle)
 class Middle(admin.ModelAdmin):

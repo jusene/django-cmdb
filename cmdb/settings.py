@@ -138,3 +138,10 @@ CELERY_RESULT_BACKEND = "django-db"
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 CELERYD_MAX_TASKS_PER_CHILD = 3
+
+SIMPLEUI_HOME_INFO = False
+SIMPLEUI_CONFIG = {
+   'system_keep': False,
+   'menu_display': ['资产管理','应用配置管理','任务调度管理','任务结果管理','认证和授权', '测试'],
+   'dynamic': True,
+}

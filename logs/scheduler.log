@@ -412,3 +412,185 @@
 [2019-11-13 14:55:37,835: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
   warnings.warn('Using settings.DEBUG leads to a memory leak, never '
 [2019-11-13 14:55:37,835: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 15:17:55,817: INFO/MainProcess] Received task: task.tasks.ansible_hoc[17d81f82-5a92-4e7c-a375-7afa510ba911]  
+[2019-11-13 15:51:46,085: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 15:51:46,105: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 15:51:47,132: INFO/MainProcess] mingle: all alone
+[2019-11-13 15:51:47,153: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 15:51:47,154: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 16:09:51,245: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 16:09:51,259: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 16:09:52,288: INFO/MainProcess] mingle: all alone
+[2019-11-13 16:09:52,316: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 16:09:52,316: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 16:32:28,880: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 16:32:28,895: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 16:32:29,923: INFO/MainProcess] mingle: all alone
+[2019-11-13 16:32:29,949: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 16:32:29,949: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:00:49,243: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:00:49,260: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:00:50,286: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:00:50,310: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:00:50,310: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:09:44,057: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:09:44,073: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:09:45,102: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:09:45,126: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:09:45,126: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:10:54,748: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:10:54,762: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:10:55,794: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:10:55,824: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:10:55,824: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:12:46,381: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:12:46,399: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:12:47,432: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:12:47,474: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:12:47,474: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:33:29,810: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:33:29,825: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:33:30,853: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:33:30,880: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:33:30,881: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:44:25,253: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:44:25,272: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:44:26,300: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:44:26,333: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:44:26,333: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:46:55,512: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:46:55,526: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:46:56,554: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:46:56,582: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:46:56,582: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:47:31,011: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:47:31,027: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:47:32,055: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:47:32,080: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:47:32,080: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:48:17,696: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:48:17,716: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:48:18,742: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:48:18,762: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:48:18,762: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:49:22,724: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:49:22,738: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:49:23,767: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:49:23,791: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:49:23,791: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:49:53,553: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:49:53,571: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:49:54,600: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:49:54,623: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:49:54,623: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:52:02,860: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:52:02,875: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:52:03,902: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:52:03,928: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:52:03,928: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 17:53:18,890: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 17:53:18,904: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 17:53:19,930: INFO/MainProcess] mingle: all alone
+[2019-11-13 17:53:19,954: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 17:53:19,954: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:04:28,854: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:04:28,868: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:04:29,896: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:04:29,921: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:04:29,921: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:07:09,899: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:07:09,914: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:07:10,942: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:07:10,970: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:07:10,970: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:11:37,587: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:11:37,604: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:11:38,631: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:11:38,657: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:11:38,657: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:14:01,553: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:14:01,572: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:14:02,600: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:14:02,620: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:14:02,620: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:16:48,455: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:16:48,470: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:16:49,499: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:16:49,530: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:16:49,531: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:18:32,758: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:18:32,773: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:18:33,804: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:18:33,831: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:18:33,831: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:21:21,376: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:21:21,392: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:21:22,420: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:21:22,448: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:21:22,449: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:31:47,735: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:31:47,750: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:31:48,778: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:31:48,802: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:31:48,802: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 18:58:39,867: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 18:58:39,887: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 18:58:40,918: INFO/MainProcess] mingle: all alone
+[2019-11-13 18:58:40,949: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 18:58:40,950: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-13 19:21:04,607: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-11-13 19:21:04,623: INFO/MainProcess] mingle: searching for neighbors
+[2019-11-13 19:21:05,652: INFO/MainProcess] mingle: all alone
+[2019-11-13 19:21:05,680: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-11-13 19:21:05,680: INFO/MainProcess] schdue@prometheus ready.
+[2019-11-14 04:00:00,052: INFO/MainProcess] Received task: celery.backend_cleanup[8491c147-0e89-401b-8b7c-fec0002850c3]  
+[2019-11-14 10:00:00,023: INFO/MainProcess] Received task: task.tasks.clean_image[d5951402-f10f-44bd-b73a-5647b4434b72]  
+[2019-11-14 10:00:00,029: INFO/MainProcess] Received task: task.tasks.clean_image[dbc13bac-6b57-4f46-b438-2684bf795094]  
+[2019-11-14 17:06:45,759: INFO/MainProcess] Received task: task.tasks.ansible_hoc[73ff0153-becc-4bd3-877d-9844d3e979bb]  
+[2019-11-14 17:06:58,242: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e973dd6b-560e-4829-a6d3-95c6f3c30a1e]  
+[2019-11-14 17:11:01,313: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d9ff71a9-29f8-4061-aa1d-6fde82f6699a]  
+[2019-11-15 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[a8864dc6-face-468a-ba3c-e702be240c39]  
+[2019-11-15 11:42:42,386: INFO/MainProcess] Received task: task.tasks.ansible_hoc[32121150-e118-468f-a9b4-ffb3e2a9e12c]  
+[2019-11-15 11:44:37,991: INFO/MainProcess] Received task: task.tasks.ansible_hoc[a79052e0-7984-4c21-8a80-ae37df021888]  
+[2019-11-15 11:53:52,668: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d12d9eb5-a1b6-4276-80fa-b496796bccba]  
+[2019-11-15 17:34:00,975: INFO/MainProcess] Received task: task.tasks.ansible_hoc[cb0626d3-e15b-483b-b6ff-e57d584f6498]  
+[2019-11-19 19:15:34,175: INFO/MainProcess] Received task: task.tasks.ansible_hoc[37dcb98f-8a88-482d-a019-66b3154358f9]  
+[2019-11-20 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[4db3ca18-338e-4ca4-a767-1b21db3c9cb3]  
+[2019-11-20 10:00:00,039: INFO/MainProcess] Received task: task.tasks.clean_image[3fe83fcf-02e1-477b-8c72-2028ccd4ac9b]  
+[2019-11-21 19:50:25,301: INFO/MainProcess] Received task: task.tasks.ansible_hoc[2e921184-6a72-47a5-97ee-03835f7e9d91]  
+[2019-11-21 20:06:34,582: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3d9309f9-4229-479e-86e4-727bf309d72a]  
+[2019-11-22 14:21:21,210: INFO/MainProcess] Received task: task.tasks.ansible_hoc[069cbcfe-56e0-4b61-9ea2-58ea306a9f52]  
+[2019-11-22 14:31:28,131: INFO/MainProcess] Received task: task.tasks.ansible_hoc[b5ae65d7-e24e-4ba4-9607-4e1d9ee0e95f]  
+[2019-11-22 19:27:10,339: INFO/MainProcess] Received task: task.tasks.ansible_hoc[0a95c507-8828-4244-a7b5-c3a7d3bbc9fc]  
+[2019-11-25 11:22:43,130: INFO/MainProcess] Received task: task.tasks.ansible_hoc[191e3ba6-de71-4161-b7e3-a8219ce76b55]  
+[2019-11-25 14:05:39,524: INFO/MainProcess] Received task: task.tasks.ansible_hoc[1b7eb4de-09f5-4b82-84c5-56446a86b2a1]  
+[2019-11-27 10:00:00,029: INFO/MainProcess] Received task: task.tasks.clean_image[32d88aab-15f9-473e-bdb5-ee9872de87f2]  
+[2019-11-27 10:00:00,037: INFO/MainProcess] Received task: task.tasks.clean_image[d7fba364-266a-4b4d-a60e-9baf50685d6c]  
+[2019-11-28 13:54:42,895: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d1932fc9-a88e-427a-a2dc-82efea446a73]  
+[2019-11-28 13:56:02,173: INFO/MainProcess] Received task: task.tasks.ansible_hoc[fbc6c74d-ac16-48f7-9ab6-882516562e9e]  
