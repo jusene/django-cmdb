@@ -594,3 +594,781 @@
 [2019-11-27 10:00:00,037: INFO/MainProcess] Received task: task.tasks.clean_image[d7fba364-266a-4b4d-a60e-9baf50685d6c]  
 [2019-11-28 13:54:42,895: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d1932fc9-a88e-427a-a2dc-82efea446a73]  
 [2019-11-28 13:56:02,173: INFO/MainProcess] Received task: task.tasks.ansible_hoc[fbc6c74d-ac16-48f7-9ab6-882516562e9e]  
+[2019-12-02 16:53:40,899: INFO/MainProcess] Received task: task.tasks.ansible_hoc[47e4079a-8a5d-47e1-8c11-3c447dc5a066]  
+[2019-12-02 16:54:20,187: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e9e23f1f-8342-4778-956d-64d83075670c]  
+[2019-12-02 17:19:22,363: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6279716e-523a-4d89-9099-a7df53ceeb14]  
+[2019-12-02 18:01:09,821: INFO/MainProcess] Received task: task.tasks.ansible_hoc[90694a9b-6087-4900-9e80-2a0bb3aff43f]  
+[2019-12-03 15:37:30,464: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e5bf8f23-4c9f-43b2-b3f4-d710d6331985]  
+[2019-12-04 09:44:10,692: INFO/MainProcess] Received task: task.tasks.ansible_hoc[65f9fa25-227b-4e10-97c4-c60cdf392ead]  
+[2019-12-04 10:00:00,024: INFO/MainProcess] Received task: task.tasks.clean_image[8d4c964b-484c-409f-9703-8e62b805ff8a]  
+[2019-12-04 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[45f29183-d8b1-4617-bb0b-da3ebaed91f6]  
+[2019-12-04 14:17:04,169: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 362, in create_loop
+    cb(*cbargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/base.py", line 238, in on_readable
+    reader(loop)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/base.py", line 220, in _read
+    drain_events(timeout=0)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 505, in drain_events
+    while not self.blocking_read(timeout):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 510, in blocking_read
+    frame = self.transport.read_frame()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/transport.py", line 252, in read_frame
+    frame_header = read(7, True)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/transport.py", line 438, in _read
+    s = recv(n - len(rbuf))
+OSError: [Errno 113] No route to host
+[2019-12-04 14:17:04,187: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-12-04 14:17:04,201: INFO/MainProcess] mingle: searching for neighbors
+[2019-12-04 14:17:05,225: INFO/MainProcess] mingle: all alone
+[2019-12-04 16:37:52,954: INFO/MainProcess] Received task: task.tasks.ansible_hoc[810f6355-4ced-4dce-8e45-0927d874f1fd]  
+[2019-12-04 16:39:43,663: INFO/MainProcess] Received task: task.tasks.ansible_hoc[bea2fb86-a3de-44ff-9540-6a9a428e3df7]  
+[2019-12-04 16:46:10,493: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e68f8974-ea72-4fd2-8000-d274d230aeb7]  
+[2019-12-04 17:12:51,737: INFO/MainProcess] Received task: task.tasks.ansible_hoc[dc29c3ac-94ce-4476-a317-713a485e6142]  
+[2019-12-06 19:48:16,330: INFO/MainProcess] Received task: task.tasks.ansible_hoc[5feeff50-bb06-4c4c-828f-71e4de9db326]  
+[2019-12-09 08:55:08,735: INFO/MainProcess] Received task: task.tasks.clean_image[b72566c3-4fbe-4544-9429-4d2751887afe]  
+[2019-12-11 10:00:00,047: INFO/MainProcess] Received task: task.tasks.clean_image[b8b3f839-3a81-4038-a518-9ead43547d02]  
+[2019-12-11 10:00:00,065: INFO/MainProcess] Received task: task.tasks.clean_image[59e6f63f-0f10-4e26-8dfa-ddc345af4aed]  
+[2019-12-18 10:00:00,037: INFO/MainProcess] Received task: task.tasks.clean_image[92c7ee82-63d4-4abe-b012-daa1c789af6c]  
+[2019-12-18 10:00:00,050: INFO/MainProcess] Received task: task.tasks.clean_image[4ae7f4ba-96e9-4e6e-9563-26553c36e42a]  
+[2019-12-18 17:23:55,564: INFO/MainProcess] Received task: task.tasks.ansible_hoc[a8dbd244-80b0-4e54-a3a7-c0a851367432]  
+[2019-12-19 14:44:55,110: INFO/MainProcess] Received task: task.tasks.ansible_hoc[1f1aec94-2296-42a4-957f-8901a80d3d4e]  
+[2019-12-19 15:55:04,965: INFO/MainProcess] Received task: task.tasks.ansible_hoc[63a023ad-1d2a-48ff-bd75-6e2defeee9c3]  
+[2019-12-19 17:18:52,742: INFO/MainProcess] Received task: task.tasks.ansible_hoc[0510ec5a-bc8c-4c6d-81da-6000186c2ed3]  
+[2019-12-23 14:18:52,351: INFO/MainProcess] Received task: task.tasks.ansible_hoc[9fcda437-65b7-4b81-a14e-5e2e561a75d4]  
+[2019-12-23 14:19:55,999: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3dad7370-4dd6-4cbf-88ff-8d0ddbcadb1f]  
+[2019-12-24 15:14:55,073: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-12-24 15:14:55,089: INFO/MainProcess] mingle: searching for neighbors
+[2019-12-24 15:14:56,118: INFO/MainProcess] mingle: all alone
+[2019-12-24 15:14:56,142: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-12-24 15:14:56,143: INFO/MainProcess] schdue@prometheus ready.
+[2019-12-24 15:15:32,509: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3186177b-e877-46b4-87f0-a5078e6aaabf]  
+[2019-12-24 17:42:27,920: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-12-24 17:42:27,938: INFO/MainProcess] mingle: searching for neighbors
+[2019-12-24 17:42:28,973: INFO/MainProcess] mingle: all alone
+[2019-12-24 17:42:29,021: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-12-24 17:42:29,021: INFO/MainProcess] schdue@prometheus ready.
+[2019-12-25 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[2dfd8e50-7b8d-48ea-ad1b-b5708a259bc3]  
+[2019-12-25 10:00:00,033: INFO/MainProcess] Received task: task.tasks.clean_image[9a5c2269-adbd-442b-92fa-895264105a50]  
+[2019-12-25 10:00:00,041: INFO/MainProcess] Received task: task.tasks.clean_image[6c6b0b31-031a-4858-acc3-ff85520f14d2]  
+[2019-12-26 04:00:00,041: INFO/MainProcess] Received task: celery.backend_cleanup[a2800389-68de-44b7-a1b4-2fa37be1e6d8]  
+[2019-12-26 16:20:21,556: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-12-26 16:20:21,574: INFO/MainProcess] mingle: searching for neighbors
+[2019-12-26 16:20:22,602: INFO/MainProcess] mingle: all alone
+[2019-12-26 16:20:22,622: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-12-26 16:20:22,622: INFO/MainProcess] schdue@prometheus ready.
+[2019-12-27 04:00:00,141: INFO/MainProcess] Received task: celery.backend_cleanup[fad1e42f-2c8f-4f0b-98f1-8d703cb129e0]  
+[2019-12-28 04:00:00,051: INFO/MainProcess] Received task: celery.backend_cleanup[07af3bd3-542d-440b-aaa3-5ba6b622dbeb]  
+[2019-12-29 04:00:00,098: INFO/MainProcess] Received task: celery.backend_cleanup[4f21cd68-e474-4454-a3b8-48207c341df2]  
+[2019-12-30 04:00:00,091: INFO/MainProcess] Received task: celery.backend_cleanup[82fd54b1-8128-44cc-9d20-44381d21b699]  
+[2019-12-30 11:15:29,506: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2019-12-30 11:15:29,524: INFO/MainProcess] mingle: searching for neighbors
+[2019-12-30 11:15:30,554: INFO/MainProcess] mingle: all alone
+[2019-12-30 11:15:30,582: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2019-12-30 11:15:30,583: INFO/MainProcess] schdue@prometheus ready.
+[2019-12-31 04:00:00,097: INFO/MainProcess] Received task: celery.backend_cleanup[ce37d1f2-474a-4e23-bee1-3a062d140b03]  
+[2020-01-01 04:00:00,090: INFO/MainProcess] Received task: celery.backend_cleanup[501e6633-2a0d-4db2-a3ad-ddebe3a286c8]  
+[2020-01-01 10:00:00,028: INFO/MainProcess] Received task: task.tasks.clean_image[2f442558-6288-4d62-a848-05c7a4478601]  
+[2020-01-01 10:00:00,038: INFO/MainProcess] Received task: task.tasks.clean_image[9a983eb5-6bd6-465f-8123-34dca3d3b428]  
+[2020-01-02 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[a8124e6a-96bd-4d95-bfe0-6233e5df1ff1]  
+[2020-01-02 16:54:03,223: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e3548bd9-5c20-4940-9c7d-04517873a790]  
+[2020-01-02 16:54:11,728: INFO/MainProcess] Received task: task.tasks.ansible_hoc[67953389-8d24-40c5-b4f0-12ea204719f5]  
+[2020-01-03 04:00:00,092: INFO/MainProcess] Received task: celery.backend_cleanup[2132e7a6-21c6-4717-a761-b1b74b1f1561]  
+[2020-01-03 11:49:55,890: INFO/MainProcess] Received task: task.tasks.ansible_hoc[59e636df-7229-4f2c-aff7-a988a20e6398]  
+[2020-01-03 14:06:37,383: INFO/MainProcess] Received task: task.tasks.ansible_hoc[bc50867e-6e97-4ec4-a52a-eda2a7c5f8e8]  
+[2020-01-03 14:07:43,314: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c61f1536-29f7-404f-bb7c-5cae77827e7e]  
+[2020-01-04 04:00:00,071: INFO/MainProcess] Received task: celery.backend_cleanup[77d8ebc2-fcc0-482e-aa5f-3700f8200d74]  
+[2020-01-05 04:00:00,094: INFO/MainProcess] Received task: celery.backend_cleanup[e7d146d1-bb8f-482d-b30f-c33114d9b689]  
+[2020-01-06 04:00:00,097: INFO/MainProcess] Received task: celery.backend_cleanup[fc39508b-a9f5-4fc2-8ba6-fe41eed7427d]  
+[2020-01-06 16:27:41,724: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c5f5316c-edd9-49d8-b54e-dacf8793ad76]  
+[2020-01-06 17:17:27,491: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3a778691-fdbe-4b09-81d3-cf9b4171ecf3]  
+[2020-01-06 18:00:07,996: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6ac496b3-12e3-44b7-b7c7-2e7231f7368e]  
+[2020-01-07 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[86212b7a-3842-4845-9e49-e0f5ade2503e]  
+[2020-01-08 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[7e84a32c-ee90-4e3f-9da0-fb444315500a]  
+[2020-01-08 10:00:00,033: INFO/MainProcess] Received task: task.tasks.clean_image[06fa721c-9be8-4bfb-810d-ce1f61938ee4]  
+[2020-01-08 10:00:00,045: INFO/MainProcess] Received task: task.tasks.clean_image[4ad9bdf4-0d6a-496a-889a-50fd147b277d]  
+[2020-01-08 13:55:08,322: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c5370dd2-cc9f-4fd2-aca6-8106c6dfe65f]  
+[2020-01-08 13:59:06,260: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f9c269ad-7130-44f4-816b-c701c9ce00e6]  
+[2020-01-08 14:43:01,098: INFO/MainProcess] Received task: task.tasks.ansible_hoc[e52f4ac2-4115-42c3-9ff4-0b67f92a638b]  
+[2020-01-08 15:49:52,699: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-01-08 15:49:52,717: INFO/MainProcess] mingle: searching for neighbors
+[2020-01-08 15:49:53,766: INFO/MainProcess] mingle: all alone
+[2020-01-08 15:49:53,804: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-01-08 15:49:53,804: INFO/MainProcess] schdue@prometheus ready.
+[2020-01-09 04:00:00,069: INFO/MainProcess] Received task: celery.backend_cleanup[dabda001-c5e7-459a-87e3-b87dee449328]  
+[2020-01-09 08:50:11,283: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-01-09 08:50:11,302: INFO/MainProcess] mingle: searching for neighbors
+[2020-01-09 08:50:12,334: INFO/MainProcess] mingle: all alone
+[2020-01-09 08:50:12,363: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-01-09 08:50:12,363: INFO/MainProcess] schdue@prometheus ready.
+[2020-01-09 14:55:35,430: INFO/MainProcess] Received task: task.tasks.ansible_hoc[ff2f8f7c-8fda-42f0-a70d-e9e64436b257]  
+[2020-01-09 15:27:59,089: INFO/MainProcess] Received task: task.tasks.ansible_hoc[0e039cb6-5459-4db5-bf71-780bb19b5423]  
+[2020-01-09 19:33:31,531: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3a680157-067f-435a-8b06-c7dcd52bbd43]  
+[2020-01-10 04:00:00,054: INFO/MainProcess] Received task: celery.backend_cleanup[5b2f087d-19d8-481f-ba9f-591e44066923]  
+[2020-01-10 09:22:52,149: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6960a7af-b61a-4a8b-ba1f-21b7169f97e5]  
+[2020-01-10 09:38:08,308: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f95d667e-408f-4b9f-bece-d87ed05ff201]  
+[2020-01-10 09:42:10,283: INFO/MainProcess] Received task: task.tasks.ansible_hoc[24d3fe0e-084f-4a9d-99c6-7a4a66826892]  
+[2020-01-10 09:50:05,242: INFO/MainProcess] Received task: task.tasks.ansible_hoc[2a86a8ea-85fc-484d-9822-686e8396ba1c]  
+[2020-01-11 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[a6423d1c-876e-4194-9543-2fb28f12d834]  
+[2020-01-12 04:00:00,041: INFO/MainProcess] Received task: celery.backend_cleanup[786c5474-61c3-47fe-95fe-06dbc12c25d6]  
+[2020-01-13 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[bca288ba-88f7-4ea9-9f8a-9cbae3b5783c]  
+[2020-01-14 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[9bf0aa33-423a-4a1d-a457-d40971e827e2]  
+[2020-01-15 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[8afc01bc-00e8-41fc-be38-c37a9dd3af8b]  
+[2020-01-15 10:00:00,035: INFO/MainProcess] Received task: task.tasks.clean_image[b8ffb676-343d-4961-8f0c-ead30518d78a]  
+[2020-01-15 10:00:00,045: INFO/MainProcess] Received task: task.tasks.clean_image[65d67826-cc6e-4ed0-910a-24a7fad57033]  
+[2020-01-16 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[23bb9098-e3de-4252-aa3c-a3a59be5ac0c]  
+[2020-01-17 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[69d9c7eb-f0cd-4a11-84f6-576ca879116d]  
+[2020-01-18 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[23c494d3-788b-4148-8b6f-02077b88f604]  
+[2020-01-19 04:00:00,048: INFO/MainProcess] Received task: celery.backend_cleanup[5ea2a6d2-fab6-490c-b919-f23502adfdaf]  
+[2020-01-20 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[5666c666-cf00-4f3b-af82-897360300623]  
+[2020-01-21 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[453ca221-8c8b-4719-806c-25df0a2175af]  
+[2020-01-22 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[1c6bd975-1927-4192-8112-bc5aebd86aae]  
+[2020-01-22 10:00:00,029: INFO/MainProcess] Received task: task.tasks.clean_image[d08695b6-3315-4847-9e56-929e51066c0a]  
+[2020-01-22 10:00:00,039: INFO/MainProcess] Received task: task.tasks.clean_image[2cc5232f-631c-4f00-b6b4-21ec53e9325c]  
+[2020-01-23 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[e1969171-9573-4d9d-ba3f-6bbc2b771ef4]  
+[2020-01-24 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[2839b2d1-1ada-4e78-ba5b-cc5e9209ad9e]  
+[2020-01-25 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[eb6255c5-02f9-45ab-a78d-13f14a138b93]  
+[2020-01-26 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[99a3b460-344a-44e3-916b-0b020accc9ba]  
+[2020-01-27 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[e361843b-d45a-44a6-80c5-84c9595bf520]  
+[2020-01-28 04:00:00,030: INFO/MainProcess] Received task: celery.backend_cleanup[87041f52-e12c-48c9-9579-5f69040dd122]  
+[2020-01-29 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[ced70149-bf8a-42c7-ad3a-1752712f1aa5]  
+[2020-01-29 10:00:00,026: INFO/MainProcess] Received task: task.tasks.clean_image[60aef116-2c37-4f4c-b77d-8728382b5087]  
+[2020-01-29 10:00:00,035: INFO/MainProcess] Received task: task.tasks.clean_image[68c93ddb-64d7-4ae0-9aa4-68615f8e05bf]  
+[2020-01-30 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[46a3ccc5-c573-4ca6-a0f2-6e987736072c]  
+[2020-01-31 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[b7a2751a-e693-4281-ab3c-f96e37b35fa9]  
+[2020-02-01 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[619d8ef1-a931-4993-9f84-2b73260c0e32]  
+[2020-02-02 04:00:00,024: INFO/MainProcess] Received task: celery.backend_cleanup[8da02923-a5c8-4152-bfc2-1fdd0f3464e2]  
+[2020-02-03 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[45a0cbf6-d688-4ef1-ade8-8937ab6156d7]  
+[2020-02-04 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[0b5aaa3a-69aa-438d-aca2-a32592443200]  
+[2020-02-05 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[4868a9f3-7949-4869-9396-9e27ccf59d9f]  
+[2020-02-05 10:00:00,028: INFO/MainProcess] Received task: task.tasks.clean_image[5073a365-a925-4834-8c31-25400514f58a]  
+[2020-02-05 10:00:00,038: INFO/MainProcess] Received task: task.tasks.clean_image[bac643b6-9a85-4923-b62d-4ffafa52b14d]  
+[2020-02-06 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[41206afd-ed68-4fdc-b043-b61d651411f9]  
+[2020-02-07 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[90cf100a-5c2d-4452-bda7-209cba6729c6]  
+[2020-02-08 04:00:00,030: INFO/MainProcess] Received task: celery.backend_cleanup[7768620c-31ef-455b-82fb-477d6021c4ae]  
+[2020-02-09 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[ea08bad6-1f13-4c52-9696-59bab196a48d]  
+[2020-02-10 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[1d202634-9602-43fa-aa71-eccaf9cd4c55]  
+[2020-02-11 04:00:00,050: INFO/MainProcess] Received task: celery.backend_cleanup[5abbe775-1b14-42f7-b6cc-34378d15db58]  
+[2020-02-11 09:03:17,170: INFO/MainProcess] Received task: task.tasks.ansible_hoc[24e4d527-fe88-4f13-9786-99a2cab4788c]  
+[2020-02-12 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[f823cab1-396c-4b73-a6c8-6c56f10726ac]  
+[2020-02-12 10:00:00,025: INFO/MainProcess] Received task: task.tasks.clean_image[1af7b924-527b-4b20-8ea5-5f08c415023d]  
+[2020-02-12 10:00:00,035: INFO/MainProcess] Received task: task.tasks.clean_image[7894e80b-73fe-42c0-a1ca-18c20ae10962]  
+[2020-02-13 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[33dd29a3-f511-4534-8a3a-a32a67f58e66]  
+[2020-02-14 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[97db02d4-310a-4616-8feb-fef9b4c1d031]  
+[2020-02-15 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[ba1f4a07-9952-4ca1-9d9c-01b90f34052e]  
+[2020-02-16 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[4e2c6d8a-5ef7-4ebc-8e3f-95dcf408ec8d]  
+[2020-02-17 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[2937903d-0b68-4866-b719-83477edc3183]  
+[2020-02-18 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[f98b5482-bebf-4402-a806-4cf99abaa47e]  
+[2020-02-19 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[a95b1731-82c9-490e-9a89-3028493985a8]  
+[2020-02-19 10:00:00,030: INFO/MainProcess] Received task: task.tasks.clean_image[e1ad5c00-efe0-47ee-bb0a-7c7133449f2e]  
+[2020-02-19 10:00:00,038: INFO/MainProcess] Received task: task.tasks.clean_image[06cd5433-372d-4f2e-9c3b-326e26ba6bd8]  
+[2020-02-20 04:00:00,030: INFO/MainProcess] Received task: celery.backend_cleanup[a10ae98a-f6c9-4e8e-8821-2c8192abedcd]  
+[2020-02-21 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[e3f84902-199f-4956-b05b-08e43fff600b]  
+[2020-02-22 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[56ed77c0-1104-4219-926f-61e9f96fae9a]  
+[2020-02-23 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[82551469-2444-48f5-a8b3-44730c9345d3]  
+[2020-02-24 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[844af299-e13a-43f8-957f-b3a3b9d16012]  
+[2020-02-25 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[c650c233-946c-4cd5-a2fb-ea90c807db33]  
+[2020-02-26 04:00:00,028: INFO/MainProcess] Received task: celery.backend_cleanup[3d1fa32d-a995-4bcd-8d3e-132ddae5fa0a]  
+[2020-02-26 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[542c71da-97ed-4fee-85d6-cacfcb1afe10]  
+[2020-02-26 10:00:00,041: INFO/MainProcess] Received task: task.tasks.clean_image[b7db1b18-dc6e-46b4-9981-cb9147dd7d5f]  
+[2020-02-27 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[153e3104-d48c-4384-ae01-31bca0bd4af9]  
+[2020-02-28 04:00:00,030: INFO/MainProcess] Received task: celery.backend_cleanup[4ef3a1e5-185a-4370-a6d0-49c277f3e3a5]  
+[2020-02-29 04:00:00,026: INFO/MainProcess] Received task: celery.backend_cleanup[c9799ec9-c959-47d0-8b36-33e8379060b7]  
+[2020-03-01 04:00:00,027: INFO/MainProcess] Received task: celery.backend_cleanup[ba620ef6-832e-47d7-8067-7b39dffd1b9c]  
+[2020-03-02 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[deac6fd0-e338-4004-8b9a-54eed622e1d1]  
+[2020-03-03 04:00:00,024: INFO/MainProcess] Received task: celery.backend_cleanup[5ddc29b5-4bce-4205-98d2-649905d21bbf]  
+[2020-03-04 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[e56f2eb2-89a9-44cc-ab2e-d8177985e7b2]  
+[2020-03-04 10:00:00,031: INFO/MainProcess] Received task: task.tasks.clean_image[37e9e543-aace-49cc-bd92-12649f2ee11b]  
+[2020-03-04 10:00:00,041: INFO/MainProcess] Received task: task.tasks.clean_image[422faadd-8bf6-4807-9327-3f884f6fefd6]  
+[2020-03-04 11:16:14,712: INFO/MainProcess] Received task: task.tasks.ansible_hoc[eb25d5ae-5841-49f5-bbb9-21abdd6ea73a]  
+[2020-03-04 11:23:37,689: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c1f472e2-0328-4b36-a433-af337acb5aad]  
+[2020-03-04 11:29:53,494: INFO/MainProcess] Received task: task.tasks.ansible_hoc[ed4bce73-ecfc-473d-b4e1-7428472cd75d]  
+[2020-03-04 12:55:49,143: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c5421b56-44ab-4b5a-ace3-c29408e891f8]  
+[2020-03-04 17:07:41,982: INFO/MainProcess] Received task: task.tasks.ansible_hoc[89edce94-6153-43a7-a92a-39eb6fe71cfd]  
+[2020-03-04 17:48:49,152: INFO/MainProcess] Received task: task.tasks.ansible_hoc[148e85c4-8c5b-41aa-97e1-efd12cb89b75]  
+[2020-03-05 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[bd9d0e3d-0454-4d27-9efa-17b01a81a9aa]  
+[2020-03-05 14:50:07,314: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6e87fd72-2150-40ad-a06f-378f84287452]  
+[2020-03-06 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[7e7cf544-7c09-4f80-a388-5f541f4373a3]  
+[2020-03-07 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[20195be6-c4ea-430f-8351-06a5b829eb2d]  
+[2020-03-08 04:00:00,027: INFO/MainProcess] Received task: celery.backend_cleanup[2dbeb78d-94ac-4756-b745-9d218e4835c2]  
+[2020-03-09 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[42a8d211-aabd-417b-a944-21cddc68f5a7]  
+[2020-03-10 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[319ba210-df1c-412f-b06a-643d32216645]  
+[2020-03-10 08:58:00,222: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6c2e22fe-b808-4c30-b529-8d894a350367]  
+[2020-03-10 17:11:45,268: INFO/MainProcess] Received task: task.tasks.clean_image[fde3d17a-4651-4399-80cf-b2da6a7df185]  
+[2020-03-10 17:12:43,309: INFO/MainProcess] Received task: task.tasks.clean_image[fc447360-da9d-4658-9f4c-e864edef2ee5]  
+[2020-03-10 18:09:25,648: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-03-10 18:09:25,672: INFO/MainProcess] mingle: searching for neighbors
+[2020-03-10 18:09:32,105: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-03-10 18:09:32,126: INFO/MainProcess] mingle: searching for neighbors
+[2020-03-10 18:09:33,156: INFO/MainProcess] mingle: all alone
+[2020-03-10 18:09:33,182: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-03-10 18:09:33,182: INFO/MainProcess] schdue@prometheus ready.
+[2020-03-10 18:13:21,988: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-03-10 18:13:22,004: INFO/MainProcess] mingle: searching for neighbors
+[2020-03-10 18:13:23,041: INFO/MainProcess] mingle: all alone
+[2020-03-10 18:13:23,067: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-03-10 18:13:23,067: INFO/MainProcess] schdue@prometheus ready.
+[2020-03-11 04:00:00,055: INFO/MainProcess] Received task: celery.backend_cleanup[7ef510f0-2d7e-42f4-a164-7681c086db69]  
+[2020-03-11 10:00:00,040: INFO/MainProcess] Received task: task.tasks.clean_image[8b7c9565-8b1c-4ef9-810c-564987c789e2]  
+[2020-03-11 10:00:00,049: INFO/MainProcess] Received task: task.tasks.clean_image[2c642a1a-1538-4f92-8e09-216f788b362b]  
+[2020-03-11 12:03:05,051: INFO/MainProcess] Received task: task.tasks.ansible_hoc[b8dfd0a7-0903-4fbc-a418-06ccad22aee5]  
+[2020-03-12 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[3f42429b-8d5c-4da4-936e-6ef6b32217d4]  
+[2020-03-13 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[edb23289-f1cc-4cd9-909d-d04c11259e6e]  
+[2020-03-14 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[6aefab28-3d2e-4227-8309-ac594d1900c7]  
+[2020-03-15 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[9cda20eb-6d1d-4ddd-83d1-579c0cbf72af]  
+[2020-03-16 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[5959d85e-36d4-4918-8604-e150f94600ea]  
+[2020-03-17 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[4720a566-e593-435f-b90f-3792e9ac94e0]  
+[2020-03-18 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[602b2001-a590-48ac-b9c3-09359bc93f6d]  
+[2020-03-18 10:00:00,033: INFO/MainProcess] Received task: task.tasks.clean_image[2c86b7d0-b730-46e1-8184-ec84165b6e3d]  
+[2020-03-18 10:00:00,042: INFO/MainProcess] Received task: task.tasks.clean_image[b94ea773-95cf-4dfd-9213-f9aa4fbbdcb6]  
+[2020-03-19 04:00:00,026: INFO/MainProcess] Received task: celery.backend_cleanup[1288a871-087b-426b-a879-5b63994816c7]  
+[2020-03-20 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[6b9152a3-f878-4c3a-a662-cf345d5206e2]  
+[2020-03-20 18:14:57,918: INFO/MainProcess] Received task: task.tasks.ansible_hoc[19aeaf1b-975d-430d-9b9c-d89112beb595]  
+[2020-03-21 04:00:00,029: INFO/MainProcess] Received task: celery.backend_cleanup[ff535007-56ad-44b9-986e-22559e27cdde]  
+[2020-03-22 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[603b7764-7652-4678-bf54-30402d30e37b]  
+[2020-03-23 04:00:00,026: INFO/MainProcess] Received task: celery.backend_cleanup[0112d8e5-429b-4d9f-8008-a7fd7352978f]  
+[2020-03-23 14:42:32,644: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 301, in create_loop
+    poll_timeout = fire_timers(propagate=propagate) if scheduled else 1
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 145, in fire_timers
+    entry()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 68, in __call__
+    return self.fun(*self.args, **self.kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 130, in _reschedules
+    return fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/connection.py", line 312, in heartbeat_check
+    return self.transport.heartbeat_check(self.connection, rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/pyamqp.py", line 149, in heartbeat_check
+    return connection.heartbeat_tick(rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 741, in heartbeat_tick
+    self.send_heartbeat()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 692, in send_heartbeat
+    self.frame_writer(8, 0, None, None, None)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/method_framing.py", line 172, in write_frame
+    write(view[:offset])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/transport.py", line 284, in write
+    self._write(s)
+TimeoutError: [Errno 110] Connection timed out
+[2020-03-23 14:42:32,713: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-03-23 14:42:32,727: INFO/MainProcess] mingle: searching for neighbors
+[2020-03-23 14:42:33,754: INFO/MainProcess] mingle: all alone
+[2020-03-24 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[204f7fb2-8c1d-4819-a8d3-d86a693775f7]  
+[2020-03-24 11:14:13,235: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6bf0af28-c93f-45d3-8016-81ce454fc3b0]  
+[2020-03-25 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[45f52334-04be-49db-a8bd-3540ad4ec86d]  
+[2020-03-25 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[4b796d6d-71de-4a48-8c6c-16fdd51aa331]  
+[2020-03-25 10:00:00,044: INFO/MainProcess] Received task: task.tasks.clean_image[3ef59b20-360e-4094-b382-2ae918eab58c]  
+[2020-03-26 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[d6197f06-df32-4763-b79b-524cd7f3329e]  
+[2020-03-27 04:00:00,024: INFO/MainProcess] Received task: celery.backend_cleanup[237c0d9a-756f-4420-8b23-9da2132bda5e]  
+[2020-03-28 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[9288ad87-369a-4b07-b7ee-906e0c841972]  
+[2020-03-29 04:00:00,027: INFO/MainProcess] Received task: celery.backend_cleanup[c6f20b49-642b-4652-b149-b85e97ac82be]  
+[2020-03-30 04:00:00,025: INFO/MainProcess] Received task: celery.backend_cleanup[607fcaeb-226f-4254-b8c5-1287b127fca3]  
+[2020-03-31 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[21d0803b-3e86-4a80-8a7c-88494ac73be9]  
+[2020-04-01 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[277e4412-cb6d-4a52-b1e2-1ce4232c5ed0]  
+[2020-04-01 10:00:00,047: INFO/MainProcess] Received task: task.tasks.clean_image[8dc09ef5-9148-4600-9cc1-471be64e3327]  
+[2020-04-01 10:00:00,062: INFO/MainProcess] Received task: task.tasks.clean_image[d1bf6eec-1f19-473c-adfd-d5290a0191d1]  
+[2020-04-02 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[6536dc62-2c9d-4b25-a698-22fb726b1caf]  
+[2020-04-03 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[c088d9e5-1f21-49d2-acb2-6913968db94c]  
+[2020-04-03 10:29:02,432: INFO/MainProcess] Received task: task.tasks.ansible_hoc[03a712cb-4d82-4d21-bb6d-e1a5d7f2ce0e]  
+[2020-04-04 04:00:00,027: INFO/MainProcess] Received task: celery.backend_cleanup[d279c53b-0750-4532-8d9c-bd2c12201550]  
+[2020-04-05 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[4b58cfc7-6a55-48d4-a29a-23708170c1e0]  
+[2020-04-06 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[fe18666d-1e4a-4878-9140-16915bb3769a]  
+[2020-04-07 04:00:00,030: INFO/MainProcess] Received task: celery.backend_cleanup[d5b20e81-7d91-46ab-adfd-1b1a685e0f01]  
+[2020-04-08 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[431c4863-cf67-45bd-be2c-2a785544706a]  
+[2020-04-18 14:15:27,658: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-04-18 14:15:27,675: INFO/MainProcess] mingle: searching for neighbors
+[2020-04-18 14:15:28,704: INFO/MainProcess] mingle: all alone
+[2020-04-18 14:15:28,730: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-04-18 14:15:28,730: INFO/MainProcess] schdue@prometheus ready.
+[2020-04-18 14:15:28,731: INFO/MainProcess] Received task: task.tasks.clean_image[e9fc1972-6b77-4e5e-8d9b-ab284c493781]  
+[2020-04-18 14:15:28,733: INFO/MainProcess] Received task: task.tasks.clean_image[85bda241-264d-43c7-b713-ac34058d054a]  
+[2020-04-18 14:15:28,733: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d16acb30-2cef-4183-bb35-c602771a88cd]  
+[2020-04-18 14:15:28,734: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f96324e8-0926-4fda-b75a-ed99f5515e27]  
+[2020-04-18 14:15:28,735: INFO/MainProcess] Received task: celery.backend_cleanup[c8ba44d5-2b5b-4f48-8f74-9213353bacb8]  
+[2020-04-18 14:15:28,736: INFO/MainProcess] Received task: celery.backend_cleanup[0ddfc625-c435-473d-986b-3d33c99e7421]  
+[2020-04-18 14:15:28,737: INFO/MainProcess] Received task: celery.backend_cleanup[82d1d5e4-4bb8-42d2-acc0-a3308d903b58]  
+[2020-04-18 14:15:28,737: INFO/MainProcess] Received task: celery.backend_cleanup[e7dca633-f6f3-44a7-a9a3-fbbed6b51fd6]  
+[2020-04-18 14:15:28,737: INFO/MainProcess] Received task: celery.backend_cleanup[77d74150-bb86-4284-9377-0bbaea47e77a]  
+[2020-04-18 14:15:28,738: INFO/MainProcess] Received task: celery.backend_cleanup[0b0f2076-ccbb-4d6d-bad0-49a8db3cadb9]  
+[2020-04-18 14:15:28,738: INFO/MainProcess] Received task: celery.backend_cleanup[29ac8609-2579-4185-879e-abeb20f6bc48]  
+[2020-04-18 14:15:28,739: INFO/MainProcess] Received task: task.tasks.clean_image[b357212e-0f09-465c-9b34-3cb7dda52800]  
+[2020-04-18 14:15:28,739: INFO/MainProcess] Received task: task.tasks.clean_image[22461044-90f4-447e-9e2e-91380d75e436]  
+[2020-04-18 14:15:28,740: INFO/MainProcess] Received task: celery.backend_cleanup[491da5a4-02c0-4402-8de7-1e4c74a7bfb6]  
+[2020-04-18 14:15:28,740: INFO/MainProcess] Received task: celery.backend_cleanup[1b2bd064-567f-4058-9606-9ccbf31a97d8]  
+[2020-04-18 14:15:28,741: INFO/MainProcess] Received task: task.tasks.ansible_hoc[afae596d-d0f7-446d-ad4d-e22079b13f66]  
+[2020-04-18 14:15:28,849: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d689d40f-a721-4844-89a4-0ad3fa004a82]  
+[2020-04-18 14:15:28,849: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f371544b-9008-437a-97b0-e85b7faefc6c]  
+[2020-04-18 14:15:28,850: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c050db65-4833-44b4-af53-54115048245d]  
+[2020-04-18 14:15:28,851: INFO/MainProcess] Received task: task.tasks.ansible_hoc[fab0ecaf-baf7-4e28-80af-0b5f186ff571]  
+[2020-04-18 14:15:57,893: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-04-18 14:15:57,913: INFO/MainProcess] mingle: searching for neighbors
+[2020-04-18 14:15:58,943: INFO/MainProcess] mingle: all alone
+[2020-04-18 14:15:58,965: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-04-18 14:15:58,965: INFO/MainProcess] schdue@prometheus ready.
+[2020-04-18 14:15:58,966: INFO/MainProcess] Received task: celery.backend_cleanup[c8ba44d5-2b5b-4f48-8f74-9213353bacb8]  
+[2020-04-18 14:15:58,968: INFO/MainProcess] Received task: celery.backend_cleanup[0ddfc625-c435-473d-986b-3d33c99e7421]  
+[2020-04-18 14:15:58,968: INFO/MainProcess] Received task: celery.backend_cleanup[82d1d5e4-4bb8-42d2-acc0-a3308d903b58]  
+[2020-04-18 14:15:58,969: INFO/MainProcess] Received task: celery.backend_cleanup[e7dca633-f6f3-44a7-a9a3-fbbed6b51fd6]  
+[2020-04-18 14:15:58,969: INFO/MainProcess] Received task: celery.backend_cleanup[77d74150-bb86-4284-9377-0bbaea47e77a]  
+[2020-04-18 14:15:58,970: INFO/MainProcess] Received task: celery.backend_cleanup[0b0f2076-ccbb-4d6d-bad0-49a8db3cadb9]  
+[2020-04-18 14:15:58,970: INFO/MainProcess] Received task: celery.backend_cleanup[29ac8609-2579-4185-879e-abeb20f6bc48]  
+[2020-04-18 14:15:58,971: INFO/MainProcess] Received task: task.tasks.clean_image[b357212e-0f09-465c-9b34-3cb7dda52800]  
+[2020-04-18 14:15:58,972: INFO/MainProcess] Received task: task.tasks.clean_image[22461044-90f4-447e-9e2e-91380d75e436]  
+[2020-04-18 14:15:58,972: INFO/MainProcess] Received task: celery.backend_cleanup[491da5a4-02c0-4402-8de7-1e4c74a7bfb6]  
+[2020-04-18 14:15:58,973: INFO/MainProcess] Received task: celery.backend_cleanup[1b2bd064-567f-4058-9606-9ccbf31a97d8]  
+[2020-04-18 14:15:58,973: INFO/MainProcess] Received task: task.tasks.ansible_hoc[afae596d-d0f7-446d-ad4d-e22079b13f66]  
+[2020-04-18 14:15:58,974: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d689d40f-a721-4844-89a4-0ad3fa004a82]  
+[2020-04-18 14:15:58,975: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f371544b-9008-437a-97b0-e85b7faefc6c]  
+[2020-04-18 14:15:58,976: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c050db65-4833-44b4-af53-54115048245d]  
+[2020-04-18 14:15:58,976: INFO/MainProcess] Received task: task.tasks.ansible_hoc[fab0ecaf-baf7-4e28-80af-0b5f186ff571]  
+[2020-04-18 14:15:59,082: INFO/MainProcess] Received task: celery.backend_cleanup[f98a24b1-f2f5-42b1-9679-0a68093a3a7b]  
+[2020-04-19 04:00:00,066: INFO/MainProcess] Received task: celery.backend_cleanup[e21125d6-2979-4d60-9fc0-d6129f415355]  
+[2020-04-20 04:00:00,068: INFO/MainProcess] Received task: celery.backend_cleanup[8965ee26-e258-4de9-811f-dca3bdcb8a95]  
+[2020-04-21 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[6f6bdcd7-0ab3-45d8-bad0-57e75a9f5af5]  
+[2020-04-21 08:50:07,488: INFO/MainProcess] Received task: task.tasks.ansible_hoc[1c881560-fecf-49bd-8881-d3dd0e2605e8]  
+[2020-04-21 09:08:30,366: INFO/MainProcess] Received task: task.tasks.ansible_hoc[9fb25848-30a2-4d4b-bc3e-e6cc29df3494]  
+[2020-04-22 04:00:00,115: INFO/MainProcess] Received task: celery.backend_cleanup[9d721305-e0ed-4080-a420-150b603d6165]  
+[2020-04-22 10:00:00,048: INFO/MainProcess] Received task: task.tasks.clean_image[10f8e7b7-a00e-4249-8cff-5d9a62b10547]  
+[2020-04-22 10:00:00,058: INFO/MainProcess] Received task: task.tasks.clean_image[dcb50216-b999-4f59-b693-ec2f945b1613]  
+[2020-04-23 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[9353d409-bf72-4e70-a571-97698af52e4a]  
+[2020-04-24 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[0e3a1cec-fe5c-4a17-bc9d-86622397c951]  
+[2020-04-25 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[a9cc5fc1-26be-461e-89f6-5d6fa1b8f90b]  
+[2020-04-26 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[b400b69b-cbc8-4082-8330-7a99f220c4e1]  
+[2020-04-26 14:00:52,705: INFO/MainProcess] Received task: task.tasks.ansible_hoc[7ed4566a-8dee-41d9-8183-1c3a70bedc07]  
+[2020-04-26 17:17:58,623: INFO/MainProcess] Received task: task.tasks.ansible_hoc[fe102953-1284-43ce-8531-70c9f633a03a]  
+[2020-04-26 17:51:29,960: INFO/MainProcess] Received task: task.tasks.ansible_hoc[55ab4f3d-6ecc-48f7-9226-f88b2fc9cecd]  
+[2020-04-27 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[156d83a9-ea6a-4924-a515-decb7cb136b7]  
+[2020-04-27 19:45:49,488: INFO/MainProcess] Received task: task.tasks.ansible_hoc[75a7f7b6-2737-4c34-986f-a4c9037e2969]  
+[2020-04-28 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[67d89c37-fae7-4d38-af24-38f356ab04cd]  
+[2020-04-28 14:41:30,036: INFO/MainProcess] Received task: task.tasks.ansible_hoc[aba1de3c-9bc3-4b95-bd1d-76d28cf9e5fb]  
+[2020-04-28 16:57:24,053: INFO/MainProcess] Received task: task.tasks.ansible_hoc[00ead9d7-7c19-4f10-9965-ef1ae0de6b6f]  
+[2020-04-29 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[949f1469-40ad-4caa-97c8-b47d85dea4ad]  
+[2020-04-29 10:00:00,029: INFO/MainProcess] Received task: task.tasks.clean_image[f3135a33-d08d-46d6-adb4-c924a25015b0]  
+[2020-04-29 10:00:00,042: INFO/MainProcess] Received task: task.tasks.clean_image[4016d7e0-a675-49de-b87f-49dcba27a8b8]  
+[2020-04-30 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[707644e9-189c-48d0-b435-7ea022804a26]  
+[2020-05-01 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[9cc6c81b-ab20-4e43-90e6-9f72da3b9f22]  
+[2020-05-02 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[2827eb8b-e0d2-4b56-930e-8ec408f2d411]  
+[2020-05-03 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[ce00cc5f-4287-4170-a0ef-79e3493f2c4e]  
+[2020-05-04 04:00:00,041: INFO/MainProcess] Received task: celery.backend_cleanup[4261bd76-28d5-4fa2-be3a-127f402a232b]  
+[2020-05-05 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[bd151a38-7765-4279-9135-b87f772ad092]  
+[2020-05-06 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[8d88c1a2-305c-4a9c-bbd3-cedc62e125dc]  
+[2020-05-06 10:00:00,040: INFO/MainProcess] Received task: task.tasks.clean_image[1076ec5b-b504-4c76-aba5-95fd60504312]  
+[2020-05-06 10:00:00,048: INFO/MainProcess] Received task: task.tasks.clean_image[bfa7a597-b5f9-497a-8059-3fc8b1d652c5]  
+[2020-05-07 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[4a7353b8-b1d8-4b8b-96fc-0e1495dd0d3d]  
+[2020-05-07 16:54:51,303: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d30e2a24-c2ff-4afa-97e4-4ee54d62df05]  
+[2020-05-08 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[17304c46-bc45-4782-b700-0a41d2e5662d]  
+[2020-05-09 04:00:00,052: INFO/MainProcess] Received task: celery.backend_cleanup[91231d7c-7ddd-4baf-bb51-7392d492f9fc]  
+[2020-05-10 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[726be203-edf0-4e6a-80a8-84e43750db0b]  
+[2020-05-11 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[90db3253-9666-422a-9bf9-b7f31623f64b]  
+[2020-05-12 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[923b7f85-d3c0-4cb6-a6ca-39cfe1943b37]  
+[2020-05-13 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[ba420436-e478-4290-9ff5-03a77aef03a7]  
+[2020-05-13 10:00:00,034: INFO/MainProcess] Received task: task.tasks.clean_image[67c1ecc5-17b4-4587-a704-d5f51336dc8c]  
+[2020-05-13 10:00:00,055: INFO/MainProcess] Received task: task.tasks.clean_image[614013b5-5eab-4aca-b0df-d30242c3d1f1]  
+[2020-05-14 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[ee698bec-76d1-44b6-9f2f-bafaa556fa18]  
+[2020-05-15 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[b01c8196-0e0a-49ee-98a6-6fe3fc48791d]  
+[2020-05-16 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[f1d1ab93-5a85-4d07-b4b6-74beecd6fa30]  
+[2020-05-17 04:00:00,051: INFO/MainProcess] Received task: celery.backend_cleanup[7b081549-63cb-4d71-b9b5-da05d4ef1a19]  
+[2020-05-18 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[259f75b7-c0d9-4895-88a9-f9d321500644]  
+[2020-05-18 11:57:55,879: INFO/MainProcess] Received task: task.tasks.ansible_hoc[bfe22885-2180-4af7-97ef-88c20f5ad175]  
+[2020-05-18 12:34:03,666: INFO/MainProcess] Received task: task.tasks.ansible_hoc[2343fe74-60b9-453d-916d-2a6ebaa301a5]  
+[2020-05-18 12:41:09,731: INFO/MainProcess] Received task: task.tasks.ansible_hoc[0c65a80d-ff3d-44dd-a8fc-c80a70ce2c2d]  
+[2020-05-19 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[0548ea6e-3554-4812-831c-34dd53d23336]  
+[2020-05-20 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[9b9d26ad-15bc-434b-ae83-a43cb4c34dc6]  
+[2020-05-20 10:00:00,031: INFO/MainProcess] Received task: task.tasks.clean_image[55bcddec-8d17-4ff1-b189-9139bd8dfbe2]  
+[2020-05-20 10:00:00,041: INFO/MainProcess] Received task: task.tasks.clean_image[cacec29e-483e-4e2a-b418-1bea9efb6b13]  
+[2020-05-21 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[5dc8babd-8172-40dd-bb83-8be40f6c34b0]  
+[2020-05-22 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[9a517b6b-6a0b-45fd-a16a-2f292db5b74b]  
+[2020-05-23 04:00:00,049: INFO/MainProcess] Received task: celery.backend_cleanup[9e4f507c-286c-477c-96cb-4ef1783f8bb6]  
+[2020-05-24 04:00:00,051: INFO/MainProcess] Received task: celery.backend_cleanup[3644344b-4a15-4e6e-a972-d91f70e1b825]  
+[2020-05-25 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[8a1a432f-8a88-48d0-aa18-5e6a3584692e]  
+[2020-05-25 16:36:19,013: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f504d5b6-f2c8-4dea-8d56-acde1b94c3ed]  
+[2020-05-25 16:39:06,370: INFO/MainProcess] Received task: task.tasks.ansible_hoc[6681cc4d-274d-4bd5-8539-eb95d9fc6ffe]  
+[2020-05-26 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[892de7ac-e039-4dc8-8483-654796754fd8]  
+[2020-05-27 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[e84ec66d-1a5f-4a7e-a702-d74cb3f2fcba]  
+[2020-05-27 10:00:00,030: INFO/MainProcess] Received task: task.tasks.clean_image[fde928b4-6780-4e42-b6a6-a6a5df973aa2]  
+[2020-05-27 10:00:00,045: INFO/MainProcess] Received task: task.tasks.clean_image[99deb068-6cdc-47df-823b-05a1959bf60d]  
+[2020-05-27 10:18:57,699: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c3ba8e88-7e0a-4860-a4be-997f3420b22c]  
+[2020-05-28 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[3c062e5e-da35-4749-8924-98d6be0acdcb]  
+[2020-05-29 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[359ca713-3d31-4468-8726-f983eba9dc9a]  
+[2020-05-30 04:00:00,032: INFO/MainProcess] Received task: celery.backend_cleanup[3c814233-6383-41cd-9f8a-346ac57ca783]  
+[2020-05-31 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[1cb8f5a1-2a98-437c-852f-6d528a132c09]  
+[2020-06-01 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[c6f7bb7a-eabe-4531-9ffc-8559f2d77efd]  
+[2020-06-02 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[85b9a9b7-cdc3-4c48-9815-aaf2f73239d1]  
+[2020-06-03 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[7b7f9104-22bd-4b2d-9ea1-5d5446db352c]  
+[2020-06-03 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[173d5b9f-a0ea-4b5f-9b93-865a45e1a042]  
+[2020-06-03 10:00:00,042: INFO/MainProcess] Received task: task.tasks.clean_image[48cb054b-6522-4b2c-ad1a-0dbefe540d42]  
+[2020-06-04 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[2e6db039-1fa6-4aa9-929b-1f7660ac1874]  
+[2020-06-05 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[994bc9ca-9f7d-4ee8-a21f-4906c42d3ab3]  
+[2020-06-06 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[89965b85-6472-402f-8a98-1818565da646]  
+[2020-06-07 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[056adbd1-7048-4523-9b6e-df2379dcbbd8]  
+[2020-06-08 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[840dff8f-4ecc-4e55-aedd-987871aaeb97]  
+[2020-06-09 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[4f2628b4-ed1c-4fcd-b425-4773c103f043]  
+[2020-06-10 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[83e5c231-69c1-449d-afca-1f75be69d850]  
+[2020-06-10 10:00:00,028: INFO/MainProcess] Received task: task.tasks.clean_image[a4aa8cd3-e94f-42ec-a1ea-8d5d1b033220]  
+[2020-06-10 10:00:00,040: INFO/MainProcess] Received task: task.tasks.clean_image[165b6563-fbd8-4172-9d9b-86a842b0cf71]  
+[2020-06-11 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[5b781c33-117e-45b3-bafe-06e946a97f32]  
+[2020-06-12 04:00:00,053: INFO/MainProcess] Received task: celery.backend_cleanup[fbc82e5b-d467-46bb-920c-654b2763ee66]  
+[2020-06-13 04:00:00,053: INFO/MainProcess] Received task: celery.backend_cleanup[7a8a4cbe-cda2-4749-829f-a52a80ae8830]  
+[2020-06-14 04:00:00,052: INFO/MainProcess] Received task: celery.backend_cleanup[50b51e53-88f6-4b0b-aa70-1b675b51c634]  
+[2020-06-15 04:00:00,039: INFO/MainProcess] Received task: celery.backend_cleanup[72cffc3e-06e7-4fb7-9efd-fb26a58d603d]  
+[2020-06-15 17:44:35,357: INFO/MainProcess] Received task: task.tasks.ansible_hoc[5cade479-7d90-47de-8758-d6c62daffee7]  
+[2020-06-15 17:55:20,558: INFO/MainProcess] Received task: task.tasks.ansible_hoc[02ab8b7c-fe37-406c-aade-968572491cb4]  
+[2020-06-15 17:55:51,429: INFO/MainProcess] Received task: task.tasks.ansible_hoc[7d3057b0-bfb5-4f53-9094-0d542443a5fd]  
+[2020-06-15 17:56:41,248: INFO/MainProcess] Received task: task.tasks.ansible_hoc[7f4f1539-ba12-47d5-8d04-5cb0effcd496]  
+[2020-06-15 18:52:21,830: INFO/MainProcess] Received task: task.tasks.ansible_hoc[de70b910-3091-437a-b5f5-7b1253607ede]  
+[2020-06-15 18:56:46,471: INFO/MainProcess] Received task: task.tasks.ansible_hoc[aefc0643-6edf-466b-950c-c72a89271119]  
+[2020-06-15 19:01:36,215: INFO/MainProcess] Received task: task.tasks.ansible_hoc[b02d83b0-5704-42d4-a6ac-1c9bd1dc3516]  
+[2020-06-15 20:27:03,440: INFO/MainProcess] Received task: task.tasks.ansible_hoc[0360aa0a-450d-4892-9ba7-f2050f106a22]  
+[2020-06-16 01:57:45,676: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3ce981f1-dd08-432f-90f6-75e8aa554167]  
+[2020-06-16 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[a861fd7e-85d8-42cc-af8f-69a694a16b6b]  
+[2020-06-17 04:00:00,048: INFO/MainProcess] Received task: celery.backend_cleanup[1b853a58-2a69-4d1a-8fa5-572726e1aff5]  
+[2020-06-17 10:00:00,032: INFO/MainProcess] Received task: task.tasks.clean_image[aca90d18-4235-43bd-b0b8-682a447176a1]  
+[2020-06-17 10:00:00,041: INFO/MainProcess] Received task: task.tasks.clean_image[17f48322-3038-4f66-9fa0-ee48ccdb91b7]  
+[2020-06-18 04:00:00,063: INFO/MainProcess] Received task: celery.backend_cleanup[d3d8d073-a7a2-4ca3-913e-dfa63ccb768a]  
+[2020-06-19 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[303376e4-533c-489b-a914-7b999696adce]  
+[2020-06-20 04:00:00,043: INFO/MainProcess] Received task: celery.backend_cleanup[487620dd-738f-4b2a-bb5a-ae053438c5d0]  
+[2020-06-21 04:00:00,046: INFO/MainProcess] Received task: celery.backend_cleanup[28d19ced-4ac9-4137-9c33-12bb53a2ff4a]  
+[2020-06-22 04:00:00,051: INFO/MainProcess] Received task: celery.backend_cleanup[2243c8d3-fa43-4a4c-90ee-d896cc7b50af]  
+[2020-06-22 13:56:13,387: INFO/MainProcess] Received task: task.tasks.ansible_hoc[43384adb-1a4f-4f0c-91ac-b281cf38b573]  
+[2020-06-22 14:22:17,581: INFO/MainProcess] Received task: task.tasks.ansible_hoc[008e93f9-a7f2-4279-8659-3cdd1323b1f1]  
+[2020-06-23 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[bb15efe9-77f8-4e6e-834d-ca05b0104e13]  
+[2020-06-24 04:00:00,046: INFO/MainProcess] Received task: celery.backend_cleanup[c8dc57ad-6324-4a25-9f8b-13a1dbb5f81d]  
+[2020-06-24 10:00:00,043: INFO/MainProcess] Received task: task.tasks.clean_image[f7b1d115-4822-4821-b07a-0955fd669e6b]  
+[2020-06-24 10:00:00,051: INFO/MainProcess] Received task: task.tasks.clean_image[447f901f-6255-4ae4-ba42-c3d4b4d329af]  
+[2020-06-25 04:00:00,031: INFO/MainProcess] Received task: celery.backend_cleanup[56aa5eca-d143-41ce-a624-b07e556e0c34]  
+[2020-06-26 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[cb9b4540-0b0c-441a-b4cc-e52a6c0e6bcb]  
+[2020-06-27 04:00:00,048: INFO/MainProcess] Received task: celery.backend_cleanup[4276832b-7546-4275-a6a0-1b9f864e6fb6]  
+[2020-06-28 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[917a119a-cd59-49bb-9006-e081a77d86a7]  
+[2020-06-29 04:00:00,049: INFO/MainProcess] Received task: celery.backend_cleanup[b8604290-a464-4518-805d-6997f7e9ff01]  
+[2020-06-29 19:18:16,215: INFO/MainProcess] Received task: task.tasks.ansible_hoc[cab64ccf-dc87-4b55-8265-a03b2b42e9fd]  
+[2020-06-30 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[047519e2-04bb-410e-a67c-64c6077e207b]  
+[2020-07-01 04:00:00,053: INFO/MainProcess] Received task: celery.backend_cleanup[45ed35d8-3d91-4a62-9df9-f1d24db2d48a]  
+[2020-07-01 10:00:00,044: INFO/MainProcess] Received task: task.tasks.clean_image[c40507a0-1ef7-497f-a7b9-d41f9fce8c50]  
+[2020-07-01 10:00:00,056: INFO/MainProcess] Received task: task.tasks.clean_image[8cbbe973-17c6-474e-8efe-ab2434e92105]  
+[2020-07-01 17:09:51,396: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f4927971-3771-4082-a03c-f6d67e745c2e]  
+[2020-07-02 04:00:00,036: INFO/MainProcess] Received task: celery.backend_cleanup[f7d6fe0f-7647-4cd0-95cf-3088bc781106]  
+[2020-07-03 04:00:00,052: INFO/MainProcess] Received task: celery.backend_cleanup[bedf3a04-8951-4fe8-80c1-e25e305a48f6]  
+[2020-07-03 13:41:56,900: INFO/MainProcess] Received task: task.tasks.ansible_hoc[d812b41e-60b4-429d-b88d-f4846a22e754]  
+[2020-07-03 14:17:07,248: INFO/MainProcess] Received task: task.tasks.ansible_hoc[b9cce17c-b127-447a-9120-3b529bd15d2e]  
+[2020-07-03 20:15:23,976: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f0a9cc58-5ab4-43de-90ed-de1393b94dbd]  
+[2020-07-04 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[d564aa89-ad1f-4ec9-b00a-3f18315cb401]  
+[2020-07-05 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[ebe09559-81d3-43b4-9784-b9674c68c08e]  
+[2020-07-06 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[66fc766d-33a1-4e3e-8ddd-141e2dc0a86a]  
+[2020-07-06 17:57:52,045: INFO/MainProcess] Received task: task.tasks.ansible_hoc[752e3c0d-a9f6-4ff2-9496-8c0e0e33b8fb]  
+[2020-07-07 04:00:00,076: INFO/MainProcess] Received task: celery.backend_cleanup[6fdfb023-98b1-4823-b793-00521513fb5c]  
+[2020-07-08 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[a43d3e62-818f-419e-bbd4-99cde1f7c610]  
+[2020-07-08 10:00:00,039: INFO/MainProcess] Received task: task.tasks.clean_image[a5c080d5-58e0-46c4-97bc-b6d62131bf5e]  
+[2020-07-08 10:00:00,066: INFO/MainProcess] Received task: task.tasks.clean_image[1a30aec5-f350-47f7-8dc9-6152ea72e055]  
+[2020-07-09 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[2b9cd307-a727-4dcb-8907-3e837063187e]  
+[2020-07-10 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[cd2a71df-338c-4738-972d-a5d0197455cf]  
+[2020-07-10 11:35:57,161: INFO/MainProcess] Received task: task.tasks.ansible_hoc[2082b716-f815-464b-948b-82b0c3d95910]  
+[2020-07-11 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[855612bc-6f68-4540-8642-803d527ca0c7]  
+[2020-07-12 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[a9d1834e-a069-4053-8c91-e995958f4be0]  
+[2020-07-13 04:00:00,035: INFO/MainProcess] Received task: celery.backend_cleanup[6bbe9d59-ff30-47aa-bd10-4a423e1813d2]  
+[2020-07-14 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[1d10c4f1-e076-4cac-a309-2fd64a427d2a]  
+[2020-07-14 15:12:34,084: INFO/MainProcess] Received task: task.tasks.ansible_hoc[32f31739-d8c0-4a90-a7b7-2003bc27c5aa]  
+[2020-07-14 16:51:21,243: INFO/MainProcess] Received task: task.tasks.ansible_hoc[b5732572-41db-4441-9e05-a87533a4e2f0]  
+[2020-07-15 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[2fcfa35d-4f34-4f99-8905-dea4213b1379]  
+[2020-07-15 10:00:00,043: INFO/MainProcess] Received task: task.tasks.clean_image[a25adf3d-476e-4f6c-881b-3c20b15d05f8]  
+[2020-07-15 10:00:00,061: INFO/MainProcess] Received task: task.tasks.clean_image[f5641a6a-642d-4f57-b942-591732b259f6]  
+[2020-07-15 11:47:20,696: INFO/MainProcess] Received task: task.tasks.ansible_hoc[dd09ae03-1064-4a2e-9bf1-9d63a42d8174]  
+[2020-07-16 04:00:00,055: INFO/MainProcess] Received task: celery.backend_cleanup[9d3a18e4-1b63-43bd-8d15-3c4633ca9484]  
+[2020-07-16 10:26:50,140: INFO/MainProcess] Received task: task.tasks.ansible_hoc[dd146df8-3df8-4d32-bc35-3ef30473c68d]  
+[2020-07-16 15:59:56,924: INFO/MainProcess] Received task: task.tasks.ansible_hoc[50e63350-c089-46b8-9f1e-ad289be48d34]  
+[2020-07-16 17:48:11,222: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c536bb25-85f0-49fd-929e-037daa18aa7b]  
+[2020-07-16 17:58:33,002: INFO/MainProcess] Received task: task.tasks.ansible_hoc[36316d26-9522-4cdf-adc1-554bd498c814]  
+[2020-07-16 19:04:00,354: INFO/MainProcess] Received task: task.tasks.ansible_hoc[ed4934dd-0832-4b28-af2b-cf568b7e5a8f]  
+[2020-07-17 04:00:00,047: INFO/MainProcess] Received task: celery.backend_cleanup[5c6771f9-c8c8-40bf-82ba-bd1b60f79265]  
+[2020-07-17 08:35:11,367: INFO/MainProcess] Received task: task.tasks.ansible_hoc[45305386-837d-4e24-ac2b-daaaeaa6af5c]  
+[2020-07-18 04:00:00,045: INFO/MainProcess] Received task: celery.backend_cleanup[37f4ce7b-e9fd-4c0d-9446-ec358d42cd99]  
+[2020-07-19 04:00:00,056: INFO/MainProcess] Received task: celery.backend_cleanup[76117466-7d4d-41ba-a12c-3fe2c9208ae8]  
+[2020-07-20 04:00:00,048: INFO/MainProcess] Received task: celery.backend_cleanup[12910407-397b-4feb-9ef3-f5158a4f6677]  
+[2020-07-20 11:32:01,432: INFO/MainProcess] Received task: task.tasks.ansible_hoc[c40aa6e8-ba33-4a4b-9169-f9fec2b79bb9]  
+[2020-07-21 04:00:00,049: INFO/MainProcess] Received task: celery.backend_cleanup[e6b5b049-fd60-4d0d-a564-64de7c384154]  
+[2020-07-21 14:51:57,477: INFO/MainProcess] Received task: task.tasks.ansible_hoc[670a75ef-d200-4035-97fe-5e36cf4b1f4c]  
+[2020-07-21 14:53:44,824: INFO/MainProcess] Received task: task.tasks.ansible_hoc[73e6153b-6daa-411d-b07b-bfd791751ebb]  
+[2020-07-31 14:22:17,130: INFO/MainProcess] Received task: task.tasks.ansible_hoc[ee5f25b1-0125-4dc7-ba1b-bd445f43cb53]  
+[2020-08-21 13:54:46,012: INFO/MainProcess] Received task: task.tasks.ansible_hoc[f6dac1be-2c40-49b4-9fdf-884fe3cef9cd]  
+[2020-08-21 16:05:12,212: INFO/MainProcess] Received task: task.tasks.ansible_hoc[93a75db5-6945-45a9-8d51-2e5fbcc055a4]  
+[2020-09-10 17:41:51,579: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3e14a2e7-e5cc-455f-be9d-2cf57f6efb85]  
+[2020-09-11 16:32:57,481: INFO/MainProcess] Received task: task.tasks.ansible_hoc[40fa5bb2-46a4-48f0-aa50-2a1a68406ed6]  
+[2020-09-14 15:01:51,598: INFO/MainProcess] Received task: task.tasks.ansible_hoc[7024d1ad-d34f-48c2-9965-6ae04c57cd88]  
+[2020-09-15 18:23:57,615: ERROR/MainProcess] Process 'ForkPoolWorker-1' pid:16650 exited with 'signal 15 (SIGTERM)'
+[2020-09-15 18:24:24,496: ERROR/MainProcess] Process 'ForkPoolWorker-5' pid:17697 exited with 'signal 9 (SIGKILL)'
+[2020-09-16 09:16:56,563: ERROR/MainProcess] Error cleaning up after event loop: RecoverableConnectionError(None, 'Socket was disconnected', None, '')
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 301, in create_loop
+    poll_timeout = fire_timers(propagate=propagate) if scheduled else 1
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 145, in fire_timers
+    entry()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 68, in __call__
+    return self.fun(*self.args, **self.kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 130, in _reschedules
+    return fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/connection.py", line 312, in heartbeat_check
+    return self.transport.heartbeat_check(self.connection, rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/pyamqp.py", line 149, in heartbeat_check
+    return connection.heartbeat_tick(rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 741, in heartbeat_tick
+    self.send_heartbeat()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 692, in send_heartbeat
+    self.frame_writer(8, 0, None, None, None)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/method_framing.py", line 172, in write_frame
+    write(view[:offset])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/transport.py", line 284, in write
+    self._write(s)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/loops.py", line 96, in asynloop
+    hub.reset()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 112, in reset
+    self.close()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 263, in close
+    item()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/vine/promises.py", line 170, in __call__
+    return self.throw()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/vine/promises.py", line 167, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/base.py", line 218, in _read
+    raise RecoverableConnectionError('Socket was disconnected')
+amqp.exceptions.RecoverableConnectionError: Socket was disconnected
+[2020-09-16 09:24:33,338: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 301, in create_loop
+    poll_timeout = fire_timers(propagate=propagate) if scheduled else 1
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 145, in fire_timers
+    entry()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 68, in __call__
+    return self.fun(*self.args, **self.kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/timer.py", line 130, in _reschedules
+    return fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/connection.py", line 312, in heartbeat_check
+    return self.transport.heartbeat_check(self.connection, rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/pyamqp.py", line 149, in heartbeat_check
+    return connection.heartbeat_tick(rate=rate)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 741, in heartbeat_tick
+    self.send_heartbeat()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 692, in send_heartbeat
+    self.frame_writer(8, 0, None, None, None)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/method_framing.py", line 172, in write_frame
+    write(view[:offset])
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/transport.py", line 284, in write
+    self._write(s)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2020-09-16 09:31:06,121: ERROR/MainProcess] consumer: Cannot connect to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery: [Errno 104] Connection reset by peer.
+Trying again in 2.00 seconds...
+
+[2020-09-16 09:32:05,737: ERROR/MainProcess] consumer: Cannot connect to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery: [Errno 104] Connection reset by peer.
+Trying again in 4.00 seconds...
+
+[2020-09-16 09:32:47,196: ERROR/MainProcess] consumer: Cannot connect to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery: [Errno 104] Connection reset by peer.
+Trying again in 6.00 seconds...
+
+[2020-09-16 09:33:36,166: ERROR/MainProcess] consumer: Cannot connect to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery: [Errno 104] Connection reset by peer.
+Trying again in 8.00 seconds...
+
+[2020-09-16 09:33:58,480: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-09-16 09:34:23,762: INFO/MainProcess] mingle: searching for neighbors
+[2020-09-16 09:36:19,919: CRITICAL/MainProcess] Unrecoverable error: NotFound(404, "NOT_FOUND - no queue 'd5f9ba71-1295-315d-b464-e5831c1d666b.reply.celery.pidbox' in vhost '/djcelery'", (60, 20), 'Basic.consume')
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 369, in start
+    return self.obj.start()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 40, in start
+    self.sync(c)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 44, in sync
+    replies = self.send_hello(c)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 57, in send_hello
+    replies = inspect.hello(c.hostname, our_revoked._data) or {}
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 154, in hello
+    return self._request('hello', from_node=from_node, revoked=revoked)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 106, in _request
+    pattern=self.pattern, matcher=self.matcher,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 477, in broadcast
+    limit, callback, channel=channel,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/pidbox.py", line 352, in _broadcast
+    channel=chan)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/pidbox.py", line 388, in _collect
+    with consumer:
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 434, in __enter__
+    self.consume()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 477, in consume
+    self._basic_consume(T, no_ack=no_ack, nowait=False)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 598, in _basic_consume
+    no_ack=no_ack, nowait=nowait)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/entity.py", line 741, in consume
+    arguments=self.consumer_arguments)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/channel.py", line 1567, in basic_consume
+    returns_tuple=True
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 68, in send_method
+    return self.wait(wait, returns_tuple=returns_tuple)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 88, in wait
+    self.connection.drain_events(timeout=timeout)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 505, in drain_events
+    while not self.blocking_read(timeout):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 511, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/method_framing.py", line 55, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 518, in on_inbound_method
+    method_sig, payload, content,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 145, in dispatch_method
+    listener(*args)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/channel.py", line 280, in _on_close
+    reply_code, reply_text, (class_id, method_id), ChannelError,
+amqp.exceptions.NotFound: Basic.consume: (404) NOT_FOUND - no queue 'd5f9ba71-1295-315d-b464-e5831c1d666b.reply.celery.pidbox' in vhost '/djcelery'
+[2020-09-16 09:40:02,425: ERROR/MainProcess] Error on stopping Hub: RecoverableConnectionError(None, 'Socket was disconnected', None, '')
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 369, in start
+    return self.obj.start()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 40, in start
+    self.sync(c)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 44, in sync
+    replies = self.send_hello(c)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/consumer/mingle.py", line 57, in send_hello
+    replies = inspect.hello(c.hostname, our_revoked._data) or {}
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 154, in hello
+    return self._request('hello', from_node=from_node, revoked=revoked)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 106, in _request
+    pattern=self.pattern, matcher=self.matcher,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/control.py", line 477, in broadcast
+    limit, callback, channel=channel,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/pidbox.py", line 352, in _broadcast
+    channel=chan)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/pidbox.py", line 388, in _collect
+    with consumer:
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 434, in __enter__
+    self.consume()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 477, in consume
+    self._basic_consume(T, no_ack=no_ack, nowait=False)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/messaging.py", line 598, in _basic_consume
+    no_ack=no_ack, nowait=nowait)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/entity.py", line 741, in consume
+    arguments=self.consumer_arguments)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/channel.py", line 1567, in basic_consume
+    returns_tuple=True
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 68, in send_method
+    return self.wait(wait, returns_tuple=returns_tuple)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 88, in wait
+    self.connection.drain_events(timeout=timeout)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 505, in drain_events
+    while not self.blocking_read(timeout):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 511, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/method_framing.py", line 55, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/connection.py", line 518, in on_inbound_method
+    method_sig, payload, content,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/abstract_channel.py", line 145, in dispatch_method
+    listener(*args)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/amqp/channel.py", line 280, in _on_close
+    reply_code, reply_text, (class_id, method_id), ChannelError,
+amqp.exceptions.NotFound: Basic.consume: (404) NOT_FOUND - no queue 'd5f9ba71-1295-315d-b464-e5831c1d666b.reply.celery.pidbox' in vhost '/djcelery'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/bootsteps.py", line 151, in send_all
+    fun(parent, *args)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/worker/components.py", line 85, in stop
+    w.hub.close()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/asynchronous/hub.py", line 263, in close
+    item()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/vine/promises.py", line 170, in __call__
+    return self.throw()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/vine/promises.py", line 167, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/kombu/transport/base.py", line 218, in _read
+    raise RecoverableConnectionError('Socket was disconnected')
+amqp.exceptions.RecoverableConnectionError: Socket was disconnected
+[2020-09-16 11:25:44,665: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-09-16 11:25:44,772: INFO/MainProcess] mingle: searching for neighbors
+[2020-09-16 11:25:45,810: INFO/MainProcess] mingle: all alone
+[2020-09-16 11:25:45,843: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-09-16 11:25:45,844: INFO/MainProcess] schdue@prometheus ready.
+[2020-09-16 11:25:45,845: INFO/MainProcess] Received task: task.tasks.clean_image[d4c87455-fb93-4f2a-a413-4e59ea024d72]  
+[2020-09-16 11:25:45,847: INFO/MainProcess] Received task: task.tasks.clean_image[5a22aa68-6f87-4a38-b178-0336770d6b84]  
+[2020-09-16 11:25:45,848: INFO/MainProcess] Received task: celery.backend_cleanup[88f0b468-2aa1-4ffd-9eb6-301b1c9abbf3]  
+[2020-09-17 04:00:00,147: INFO/MainProcess] Received task: celery.backend_cleanup[d13f5d46-56bf-45a1-8704-5180a58cb74c]  
+[2020-09-18 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[bd8b7729-d016-47c6-b060-debf3b6e742b]  
+[2020-09-18 15:54:42,844: INFO/MainProcess] Received task: task.tasks.ansible_hoc[750aead0-465d-48ad-a70e-107025c32722]  
+[2020-09-19 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[f0662135-2767-4c91-8802-020c5a77b206]  
+[2020-09-20 04:00:00,042: INFO/MainProcess] Received task: celery.backend_cleanup[1cee17e8-4766-4f65-b8c0-5a97a4c4e67b]  
+[2020-09-21 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[6aeacb14-d66d-44b8-8365-41e095da0bd4]  
+[2020-09-22 04:00:00,037: INFO/MainProcess] Received task: celery.backend_cleanup[a718ef00-26b4-4f41-9c24-874ac5a88f41]  
+[2020-09-23 04:00:00,040: INFO/MainProcess] Received task: celery.backend_cleanup[23818e98-df6e-479d-975f-3e672bf9c1b1]  
+[2020-09-23 10:00:00,030: INFO/MainProcess] Received task: task.tasks.clean_image[37b3db9f-f16a-430b-80f6-8fb0067ebcaf]  
+[2020-09-23 10:00:00,038: INFO/MainProcess] Received task: task.tasks.clean_image[0332290d-0491-4cbe-acd2-5165329ff9ff]  
+[2020-09-24 04:00:00,044: INFO/MainProcess] Received task: celery.backend_cleanup[4e8d8adf-75c3-4768-b006-931ba1cd94a6]  
+[2020-09-25 04:00:00,033: INFO/MainProcess] Received task: celery.backend_cleanup[d3f83d59-6b29-4a3e-a457-204d0d1b4210]  
+[2020-09-26 04:00:00,034: INFO/MainProcess] Received task: celery.backend_cleanup[c56fe7ca-bf6c-469f-a30d-25c16354fbfb]  
+[2020-09-27 04:00:00,049: INFO/MainProcess] Received task: celery.backend_cleanup[10d86d5a-2208-441c-b593-b8f6887b0d03]  
+[2020-09-28 04:00:00,050: INFO/MainProcess] Received task: celery.backend_cleanup[c8f120bb-e4e0-477c-b9a3-f321182e5859]  
+[2020-09-29 04:00:00,051: INFO/MainProcess] Received task: celery.backend_cleanup[c33b9665-2da9-4002-94f1-6db386bffd47]  
+[2020-09-30 04:00:00,038: INFO/MainProcess] Received task: celery.backend_cleanup[b18f39eb-f314-4ac2-bd78-1c5b6c68c95f]  
+[2020-09-30 10:00:00,048: INFO/MainProcess] Received task: task.tasks.clean_image[e34f044a-61a0-4128-9d2b-f7f7bc560bc6]  
+[2020-09-30 10:00:00,059: INFO/MainProcess] Received task: task.tasks.clean_image[16c44911-7a23-49aa-b81d-496d5b2896f3]  
+[2020-09-30 14:20:24,302: INFO/MainProcess] Received task: task.tasks.ansible_hoc[3524590c-d584-4bc5-9e7c-992c4e6ba25c]  
+[2020-09-30 14:23:15,142: INFO/MainProcess] Received task: task.tasks.ansible_hoc[733e5265-4f36-4401-b3cf-e72520e79663]  
+[2020-10-08 11:52:57,390: INFO/MainProcess] Connected to amqp://rabbitadmin:**@192.168.55.91:5672//djcelery
+[2020-10-08 11:52:57,405: INFO/MainProcess] mingle: searching for neighbors
+[2020-10-08 11:52:58,433: INFO/MainProcess] mingle: all alone
+[2020-10-08 11:52:58,458: WARNING/MainProcess] /ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-10-08 11:52:58,458: INFO/MainProcess] schdue@prometheus ready.

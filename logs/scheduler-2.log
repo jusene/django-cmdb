@@ -66,3 +66,247 @@ TypeError: __init__() got an unexpected keyword argument 'options'
 [2019-11-25 11:22:45,744: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[191e3ba6-de71-4161-b7e3-a8219ce76b55] succeeded in 2.6101720379665494s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
 [2019-11-27 10:00:03,672: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[32d88aab-15f9-473e-bdb5-ee9872de87f2] succeeded in 3.6386206904426217s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
 [2019-11-28 13:54:46,598: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[d1932fc9-a88e-427a-a2dc-82efea446a73] succeeded in 3.6996535155922174s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-02 16:53:43,880: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[47e4079a-8a5d-47e1-8c11-3c447dc5a066] succeeded in 2.9762470638379455s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-02 17:19:24,835: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[6279716e-523a-4d89-9099-a7df53ceeb14] succeeded in 2.4695500368252397s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-03 15:37:33,205: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[e5bf8f23-4c9f-43b2-b3f4-d710d6331985] succeeded in 2.7375532928854227s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-04 10:00:14,226: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[8d4c964b-484c-409f-9703-8e62b805ff8a] succeeded in 14.198789166286588s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2019-12-04 16:39:46,783: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[bea2fb86-a3de-44ff-9540-6a9a428e3df7] succeeded in 3.1180753922089934s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-04 17:12:53,849: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[dc29c3ac-94ce-4476-a317-713a485e6142] succeeded in 2.1088935947045684s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-09 08:55:17,546: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[b72566c3-4fbe-4544-9429-4d2751887afe] succeeded in 8.803970479406416s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2019-12-11 10:00:31,649: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[59e6f63f-0f10-4e26-8dfa-ddc345af4aed] succeeded in 31.576660924591124s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2019-12-18 10:00:03,662: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[4ae7f4ba-96e9-4e6e-9563-26553c36e42a] succeeded in 3.6073796562850475s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2019-12-19 14:44:58,199: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[1f1aec94-2296-42a4-957f-8901a80d3d4e] succeeded in 3.0866676094010472s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-19 17:18:55,100: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[0510ec5a-bc8c-4c6d-81da-6000186c2ed3] succeeded in 2.3543656142428517s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-23 14:19:59,087: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[3dad7370-4dd6-4cbf-88ff-8d0ddbcadb1f] succeeded in 3.082849414087832s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2019-12-25 10:00:13,782: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[9a5c2269-adbd-442b-92fa-895264105a50] succeeded in 13.742877409793437s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': [[{...}, {...}]]}
+[2019-12-26 04:00:00,128: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[a2800389-68de-44b7-a1b4-2fa37be1e6d8] succeeded in 0.0835297740995884s: None
+[2019-12-28 04:00:00,217: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[07af3bd3-542d-440b-aaa3-5ba6b622dbeb] succeeded in 0.15605117287486792s: None
+[2019-12-30 04:00:00,181: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[82fd54b1-8128-44cc-9d20-44381d21b699] succeeded in 0.070450309664011s: None
+[2020-01-01 04:00:00,264: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[501e6633-2a0d-4db2-a3ad-ddebe3a286c8] succeeded in 0.15789909847080708s: None
+[2020-01-01 10:00:03,678: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[9a983eb5-6bd6-465f-8123-34dca3d3b428] succeeded in 3.636914017610252s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-01-02 16:54:06,486: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[e3548bd9-5c20-4940-9c7d-04517873a790] succeeded in 3.2529921140521765s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-03 04:00:00,291: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[2132e7a6-21c6-4717-a761-b1b74b1f1561] succeeded in 0.1810204479843378s: None
+[2020-01-03 14:06:42,117: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[bc50867e-6e97-4ec4-a52a-eda2a7c5f8e8] succeeded in 4.719033977016807s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-04 04:00:00,268: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[77d8ebc2-fcc0-482e-aa5f-3700f8200d74] succeeded in 0.16855260264128447s: None
+[2020-01-06 04:00:00,266: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[fc39508b-a9f5-4fc2-8ba6-fe41eed7427d] succeeded in 0.14740508049726486s: None
+[2020-01-06 17:17:32,309: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[3a778691-fdbe-4b09-81d3-cf9b4171ecf3] succeeded in 4.804203167557716s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-07 04:00:00,114: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[86212b7a-3842-4845-9e49-e0f5ade2503e] succeeded in 0.06887039076536894s: None
+[2020-01-08 10:00:03,794: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[06fa721c-9be8-4bfb-810d-ce1f61938ee4] succeeded in 3.7512949965894222s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-01-08 13:55:10,983: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[c5370dd2-cc9f-4fd2-aca6-8106c6dfe65f] succeeded in 2.6539050843566656s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-08 14:43:08,460: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[e52f4ac2-4115-42c3-9ff4-0b67f92a638b] succeeded in 7.354678792878985s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-09 15:28:02,270: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[0e039cb6-5459-4db5-bf71-780bb19b5423] succeeded in 3.1738551929593086s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-10 04:00:00,141: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[5b2f087d-19d8-481f-ba9f-591e44066923] succeeded in 0.0751691684126854s: None
+[2020-01-10 09:38:10,798: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[f95d667e-408f-4b9f-bece-d87ed05ff201] succeeded in 2.4849003311246634s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-10 09:50:07,686: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[2a86a8ea-85fc-484d-9822-686e8396ba1c] succeeded in 2.43939277715981s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-01-12 04:00:00,141: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[786c5474-61c3-47fe-95fe-06dbc12c25d6] succeeded in 0.0917393509298563s: None
+[2020-01-14 04:00:00,128: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[9bf0aa33-423a-4a1d-a457-d40971e827e2] succeeded in 0.08418258652091026s: None
+[2020-01-15 10:00:09,297: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[b8ffb676-343d-4961-8f0c-ead30518d78a] succeeded in 9.247745970264077s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-01-16 04:00:00,132: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[23bb9098-e3de-4252-aa3c-a3a59be5ac0c] succeeded in 0.09516235999763012s: None
+[2020-01-18 04:00:00,115: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[23c494d3-788b-4148-8b6f-02077b88f604] succeeded in 0.062274934723973274s: None
+[2020-01-20 04:00:00,153: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[5666c666-cf00-4f3b-af82-897360300623] succeeded in 0.10661210678517818s: None
+[2020-01-22 04:00:00,128: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[1c6bd975-1927-4192-8112-bc5aebd86aae] succeeded in 0.08400040119886398s: None
+[2020-01-22 10:00:04,287: WARNING/WorkerProcess-2:42] [WARNING]: sftp transfer mechanism failed on [192.168.66.164]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-22 10:00:04,400: WARNING/WorkerProcess-2:42] [WARNING]: scp transfer mechanism failed on [192.168.66.164]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-22 10:00:09,148: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[2cc5232f-631c-4f00-b6b4-21ec53e9325c] succeeded in 9.10448900796473s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-01-24 04:00:00,222: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[2839b2d1-1ada-4e78-ba5b-cc5e9209ad9e] succeeded in 0.17521977052092552s: None
+[2020-01-26 04:00:00,202: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[99a3b460-344a-44e3-916b-0b020accc9ba] succeeded in 0.1592684257775545s: None
+[2020-01-28 04:00:00,175: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[87041f52-e12c-48c9-9579-5f69040dd122] succeeded in 0.13840229250490665s: None
+[2020-01-29 10:00:03,757: WARNING/WorkerProcess-2:62] [WARNING]: sftp transfer mechanism failed on [192.168.66.185]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-29 10:00:03,777: WARNING/WorkerProcess-2:59] [WARNING]: sftp transfer mechanism failed on [192.168.66.161]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-29 10:00:03,823: WARNING/WorkerProcess-2:59] [WARNING]: scp transfer mechanism failed on [192.168.66.161]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-29 10:00:03,860: WARNING/WorkerProcess-2:62] [WARNING]: scp transfer mechanism failed on [192.168.66.185]. Use
+ANSIBLE_DEBUG=1 to see detailed information
+[2020-01-29 10:00:06,799: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[60aef116-2c37-4f4c-b77d-8728382b5087] succeeded in 6.764351785182953s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-01-30 04:00:00,198: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[46a3ccc5-c573-4ca6-a0f2-6e987736072c] succeeded in 0.15656006708741188s: None
+[2020-02-01 04:00:00,148: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[619d8ef1-a931-4993-9f84-2b73260c0e32] succeeded in 0.10714906826615334s: None
+[2020-02-03 04:00:00,195: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[45a0cbf6-d688-4ef1-ade8-8937ab6156d7] succeeded in 0.1475103236734867s: None
+[2020-02-05 04:00:00,200: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[4868a9f3-7949-4869-9396-9e27ccf59d9f] succeeded in 0.1572403721511364s: None
+[2020-02-05 10:00:07,918: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[bac643b6-9a85-4923-b62d-4ffafa52b14d] succeeded in 7.8758056201040745s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-02-07 04:00:00,200: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[90cf100a-5c2d-4452-bda7-209cba6729c6] succeeded in 0.1477098036557436s: None
+[2020-02-09 04:00:00,089: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[ea08bad6-1f13-4c52-9696-59bab196a48d] succeeded in 0.04331786185503006s: None
+[2020-02-11 04:00:00,170: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[5abbe775-1b14-42f7-b6cc-34378d15db58] succeeded in 0.11192568019032478s: None
+[2020-02-12 04:00:00,132: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[f823cab1-396c-4b73-a6c8-6c56f10726ac] succeeded in 0.09225667268037796s: None
+[2020-02-12 10:00:04,178: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[7894e80b-73fe-42c0-a1ca-18c20ae10962] succeeded in 4.139070145785809s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-02-14 04:00:00,204: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[97db02d4-310a-4616-8feb-fef9b4c1d031] succeeded in 0.1621383037418127s: None
+[2020-02-16 04:00:00,095: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[4e2c6d8a-5ef7-4ebc-8e3f-95dcf408ec8d] succeeded in 0.05016745626926422s: None
+[2020-02-18 04:00:00,158: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[f98b5482-bebf-4402-a806-4cf99abaa47e] succeeded in 0.11119348369538784s: None
+[2020-02-19 10:00:04,399: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[e1ad5c00-efe0-47ee-bb0a-7c7133449f2e] succeeded in 4.360097974538803s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-02-20 04:00:00,105: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[a10ae98a-f6c9-4e8e-8821-2c8192abedcd] succeeded in 0.06683651730418205s: None
+[2020-02-22 04:00:00,174: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[56ed77c0-1104-4219-926f-61e9f96fae9a] succeeded in 0.13323424942791462s: None
+[2020-02-24 04:00:00,185: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[844af299-e13a-43f8-957f-b3a3b9d16012] succeeded in 0.14611980505287647s: None
+[2020-02-26 04:00:00,150: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[3d1fa32d-a995-4bcd-8d3e-132ddae5fa0a] succeeded in 0.1143560167402029s: None
+[2020-02-26 10:00:04,215: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[b7db1b18-dc6e-46b4-9981-cb9147dd7d5f] succeeded in 4.169113527983427s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-02-28 04:00:00,180: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[4ef3a1e5-185a-4370-a6d0-49c277f3e3a5] succeeded in 0.14243404008448124s: None
+[2020-03-01 04:00:00,155: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[ba620ef6-832e-47d7-8067-7b39dffd1b9c] succeeded in 0.11937869898974895s: None
+[2020-03-03 04:00:00,205: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[5ddc29b5-4bce-4205-98d2-649905d21bbf] succeeded in 0.17295270785689354s: None
+[2020-03-04 10:00:04,568: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[37e9e543-aace-49cc-bd92-12649f2ee11b] succeeded in 4.527976363897324s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': [[{...}, {...}]]}
+[2020-03-04 11:16:17,294: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[eb25d5ae-5841-49f5-bbb9-21abdd6ea73a] succeeded in 2.575137371197343s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-03-04 11:29:56,860: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[ed4bce73-ecfc-473d-b4e1-7428472cd75d] succeeded in 3.361389873549342s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-03-04 17:07:44,353: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[89edce94-6153-43a7-a92a-39eb6fe71cfd] succeeded in 2.3616445884108543s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-03-05 04:00:00,190: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[bd9d0e3d-0454-4d27-9efa-17b01a81a9aa] succeeded in 0.14971234276890755s: None
+[2020-03-06 04:00:00,274: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[7e7cf544-7c09-4f80-a388-5f541f4373a3] succeeded in 0.22962499596178532s: None
+[2020-03-08 04:00:00,154: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[2dbeb78d-94ac-4756-b745-9d218e4835c2] succeeded in 0.11812121793627739s: None
+[2020-03-10 04:00:00,107: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[319ba210-df1c-412f-b06a-643d32216645] succeeded in 0.06604609452188015s: None
+[2020-03-10 17:11:53,714: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[fde3d17a-4651-4399-80cf-b2da6a7df185] succeeded in 8.438375798985362s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-03-11 10:00:05,979: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[8b7c9565-8b1c-4ef9-810c-564987c789e2] succeeded in 5.922335838899016s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-03-24 11:14:15,795: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[6bf0af28-c93f-45d3-8016-81ce454fc3b0] succeeded in 2.5482674799859524s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-03-25 10:00:16,313: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[4b796d6d-71de-4a48-8c6c-16fdd51aa331] succeeded in 16.267017383128405s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-03-26 04:00:00,173: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[d6197f06-df32-4763-b79b-524cd7f3329e] succeeded in 0.13194910436868668s: None
+[2020-03-28 04:00:00,119: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[9288ad87-369a-4b07-b7ee-906e0c841972] succeeded in 0.0677986741065979s: None
+[2020-03-30 04:00:00,209: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[607fcaeb-226f-4254-b8c5-1287b127fca3] succeeded in 0.17519652843475342s: None
+[2020-04-01 04:00:00,204: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[277e4412-cb6d-4a52-b1e2-1ce4232c5ed0] succeeded in 0.1639026440680027s: None
+[2020-04-01 10:00:11,262: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[d1bf6eec-1f19-473c-adfd-d5290a0191d1] succeeded in 11.195044608786702s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-04-03 04:00:00,192: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[c088d9e5-1f21-49d2-acb2-6913968db94c] succeeded in 0.1490845736116171s: None
+[2020-04-04 04:00:00,168: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[d279c53b-0750-4532-8d9c-bd2c12201550] succeeded in 0.13184462115168571s: None
+[2020-04-06 04:00:00,089: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[fe18666d-1e4a-4878-9140-16915bb3769a] succeeded in 0.048399683088064194s: None
+[2020-04-08 04:00:00,096: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[431c4863-cf67-45bd-be2c-2a785544706a] succeeded in 0.05265450477600098s: None
+[2020-04-18 14:15:34,830: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[d16acb30-2cef-4183-bb35-c602771a88cd] succeeded in 5.983879424631596s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-04-18 14:15:59,170: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[82d1d5e4-4bb8-42d2-acc0-a3308d903b58] succeeded in 0.08795798569917679s: None
+[2020-04-18 14:15:59,190: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[0b0f2076-ccbb-4d6d-bad0-49a8db3cadb9] succeeded in 0.018937405198812485s: None
+[2020-04-18 14:16:03,228: INFO/ForkPoolWorker-2] Task task.tasks.clean_image[b357212e-0f09-465c-9b34-3cb7dda52800] succeeded in 4.037509027868509s: {'ok': [], 'failed': [[{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}], [{...}, {...}]], 'unreachable': []}
+[2020-04-18 14:16:03,258: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[491da5a4-02c0-4402-8de7-1e4c74a7bfb6] succeeded in 0.02819981798529625s: None
+[2020-04-18 14:16:05,228: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[afae596d-d0f7-446d-ad4d-e22079b13f66] succeeded in 1.9686700105667114s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-04-18 14:16:07,144: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[f371544b-9008-437a-97b0-e85b7faefc6c] succeeded in 1.9139936938881874s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-04-18 14:16:09,034: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[fab0ecaf-baf7-4e28-80af-0b5f186ff571] succeeded in 1.8894801884889603s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}
+[2020-09-16 11:25:46,102: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[88f0b468-2aa1-4ffd-9eb6-301b1c9abbf3] succeeded in 0.14650413900000103s: None
+[2020-09-18 04:00:00,346: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[bd8b7729-d016-47c6-b060-debf3b6e742b] succeeded in 0.2918348390085157s: None
+[2020-09-19 04:00:00,184: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[f0662135-2767-4c91-8802-020c5a77b206] succeeded in 0.13401049398817122s: None
+[2020-09-21 04:00:00,170: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[6aeacb14-d66d-44b8-8365-41e095da0bd4] succeeded in 0.12416906101861969s: None
+[2020-09-23 04:00:00,230: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[23818e98-df6e-479d-975f-3e672bf9c1b1] succeeded in 0.17933654901571572s: None
+[2020-09-23 10:00:03,284: ERROR/ForkPoolWorker-2] Task task.tasks.clean_image[0332290d-0491-4cbe-acd2-5165329ff9ff] raised unexpected: ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cb2a58>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib64/python3.6/http/client.py", line 1254, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1300, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb6a2cb2a58>: Failed to establish a new connection: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cb2a58>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 22, in clean_image
+    resp = requests.get(choice.get(env))
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cb2a58>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+[2020-09-25 04:00:00,236: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[d3f83d59-6b29-4a3e-a457-204d0d1b4210] succeeded in 0.19352653401438147s: None
+[2020-09-27 04:00:00,159: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[10d86d5a-2208-441c-b593-b8f6887b0d03] succeeded in 0.10018117097206414s: None
+[2020-09-29 04:00:00,164: INFO/ForkPoolWorker-2] Task celery.backend_cleanup[c33b9665-2da9-4002-94f1-6db386bffd47] succeeded in 0.10494793020188808s: None
+[2020-09-30 10:00:03,146: ERROR/ForkPoolWorker-2] Task task.tasks.clean_image[e34f044a-61a0-4128-9d2b-f7f7bc560bc6] raised unexpected: ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cc1358>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),)
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib64/python3.6/http/client.py", line 1254, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1300, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb6a2cc1358>: Failed to establish a new connection: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cc1358>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 385, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/celery/app/trace.py", line 648, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/ddhome/cmdb/task/tasks.py", line 22, in clean_image
+    resp = requests.get(choice.get(env))
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/ddhome/cmdb/venv/lib64/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.66.128', port=8080): Max retries exceeded with url: /api/v1/nodes (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb6a2cc1358>: Failed to establish a new connection: [Errno 110] Connection timed out',))
+[2020-09-30 14:20:28,474: INFO/ForkPoolWorker-2] Task task.tasks.ansible_hoc[3524590c-d584-4bc5-9e7c-992c4e6ba25c] succeeded in 4.166343315970153s: {'ok': [[{...}, {...}], [{...}, {...}], [{...}, {...}]], 'failed': [], 'unreachable': []}

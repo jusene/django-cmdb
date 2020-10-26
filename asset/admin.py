@@ -1,6 +1,8 @@
 from django.contrib import admin
 from asset.models import Project, Env, Idc, Server, Host, User, Computer
 
+from import_export.admin import ImportExportModelAdmin
+
 # Register your models here.
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
@@ -44,14 +46,14 @@ class HostAdmin(admin.ModelAdmin):
 
 
 @admin.register(User)
-class UserAdmin(admin.ModelAdmin):
+class UserAdmin(ImportExportModelAdmin):
     list_display = ('id', 'name', 'number', 'email', 'phone', 'comment')
     list_per_page = 50
     list_display_links = ('id', 'name')
 
 
 @admin.register(Computer)
-class ComputerAdmin(admin.ModelAdmin):
+class ComputerAdmin(ImportExportModelAdmin):
     list_display = ('id', 'asset_id', 'unit', 'os', 'model', 'num', 'location', 'lock', 'domain', 'user', 'comment')
     search_fields = ['asset_id', 'user__name']
     list_per_page = 50

@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.html import format_html
 from asset.utils.useful_data import status_code, unit_code
+from import_export import resources
+from django.apps import apps
 
 
 # Create your models here.
@@ -107,7 +109,7 @@ class Server(models.Model):
 
 class Host(models.Model):
     name = models.CharField("主机名", max_length=20, unique=True)
-    lan = models.GenericIPAddressField("内网地址", unique=True)
+    lan = models.GenericIPAddressField("内网地址")
     wan = models.GenericIPAddressField("外网地址", null=True, blank=True, help_text="可选")
     server = models.ForeignKey(Server, on_delete=models.CASCADE, verbose_name="物理机", null=True, blank=True, default=None)
     idc = models.ForeignKey(Idc, on_delete=models.CASCADE, verbose_name="机房", default=None)
@@ -163,3 +165,4 @@ class Computer(models.Model):
         verbose_name = "PC管理"
         verbose_name_plural = "PC管理"
         ordering = ['id']
+

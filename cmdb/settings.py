@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'django_celery_beat',
     'rest_framework',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,5 @@ SIMPLEUI_CONFIG = {
    'menu_display': ['资产管理','应用配置管理','任务调度管理','任务结果管理','认证和授权', '测试'],
    'dynamic': True,
 }
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
